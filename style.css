@@ -353,7 +353,406 @@ button:active {
 
     font-family: "Playfair Display", serif;
     font-style: italic;
+/* ========================================
+   SISTEMA DE PANTALLAS
+======================================== */
 
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: flex;
+}
+
+
+/* ========================================
+   HOME
+======================================== */
+
+.home {
+    min-height: 100vh;
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    padding:
+        35px 24px
+        105px;
+
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf2 0%,
+            #f9f1e8 100%
+        );
+}
+
+
+/* HEADER */
+
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.home-eyebrow,
+.card-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: var(--sage-dark);
+}
+
+
+.home-header h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+    font-weight: 500;
+
+    color: #385542;
+
+    margin-top: 3px;
+}
+
+
+.home-date {
+    margin-top: 4px;
+
+    font-size: 13px;
+
+    color: #82776e;
+
+    text-transform: capitalize;
+}
+
+
+.profile-button {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: var(--paper);
+
+    border: 1px solid rgba(97,122,99,.18);
+
+    font-size: 21px;
+}
+
+
+/* ========================================
+   PROGRESO
+======================================== */
+
+.progress-card {
+    padding: 22px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbe4d5,
+            #f0e5dc
+        );
+
+    box-shadow: var(--shadow);
+
+    margin-bottom: 18px;
+}
+
+
+.progress-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.progress-card h3,
+.today-card h3,
+.categories-section h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    color: #3d5544;
+}
+
+
+.progress-number {
+    font-family: "Playfair Display", serif;
+
+    font-size: 31px;
+
+    color: var(--sage-dark);
+}
+
+
+.progress-bar {
+    height: 8px;
+
+    margin: 18px 0 13px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.7);
+}
+
+
+.progress-fill {
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--sage-dark);
+}
+
+
+.progress-message {
+    font-size: 13px;
+
+    color: #667067;
+}
+
+
+/* ========================================
+   HOY
+======================================== */
+
+.today-card {
+    padding: 20px;
+
+    border-radius: 24px;
+
+    background: var(--paper);
+
+    border: 1px solid rgba(128,106,93,.10);
+
+    box-shadow:
+        0 8px 24px rgba(78,73,62,.07);
+
+    margin-bottom: 30px;
+}
+
+
+.today-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 13px;
+
+    border-radius: 13px;
+
+    background: var(--pink);
+
+    font-size: 20px;
+}
+
+
+.today-card p:not(.card-label) {
+    margin-top: 7px;
+
+    font-size: 13px;
+    line-height: 1.55;
+
+    color: #70736f;
+}
+
+
+.small-button {
+    width: auto;
+
+    margin-top: 15px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: var(--sage-dark);
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+/* ========================================
+   CATEGORÍAS
+======================================== */
+
+.section-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+
+.text-button {
+    width: auto;
+
+    background: transparent;
+
+    color: var(--sage-dark);
+
+    font-size: 12px;
+}
+
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.category-card {
+    min-height: 125px;
+
+    padding: 17px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    color: var(--text);
+
+    box-shadow:
+        0 6px 18px rgba(78,73,62,.06);
+}
+
+
+.category-icon {
+    font-size: 28px;
+
+    margin-bottom: auto;
+}
+
+
+.category-card strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 17px;
+}
+
+
+.category-card small {
+    margin-top: 3px;
+
+    color: rgba(57,69,60,.65);
+}
+
+
+.plants {
+    background: #dce7d7;
+}
+
+.mushrooms {
+    background: #ead8c7;
+}
+
+.flowers {
+    background: #efd5da;
+}
+
+.insects {
+    background: #e5dfca;
+}
+
+.fish {
+    background: #d7e4eb;
+}
+
+.animals {
+    background: #ded6e7;
+}
+
+
+/* ========================================
+   NAVEGACIÓN INFERIOR
+======================================== */
+
+.bottom-navigation {
+    position: fixed;
+
+    z-index: 10;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: min(480px, 100%);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    padding:
+        10px 8px
+        calc(10px + env(safe-area-inset-bottom));
+
+    background:
+        rgba(255,249,240,.94);
+
+    backdrop-filter: blur(14px);
+
+    border-top:
+        1px solid rgba(97,122,99,.12);
+}
+
+
+.nav-item {
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    color: #8a8a82;
+
+    font-size: 20px;
+}
+
+
+.nav-item small {
+    font-size: 9px;
+}
+
+
+.nav-item.active {
+    color: var(--sage-dark);
+}
     font-size: 13px;
 
     color: var(--brown);
