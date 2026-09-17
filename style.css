@@ -767,9 +767,11 @@ color: var(--brown);
 .collection {
     min-height: 100vh;
     max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     padding: 35px 24px 105px;
     flex-direction: column;
+    overflow-x: hidden;
     background:
         linear-gradient(
             180deg,
@@ -942,4 +944,59 @@ color: var(--brown);
 
 .recipe-card {
     background: #f1dfa9;
+}
+.collection,
+.collection * {
+    box-sizing: border-box;
+}
+
+.collection {
+    overflow-x: hidden;
+}
+
+.collection-header,
+.collection-progress,
+.collection-categories,
+.collection-grid,
+.collection-card {
+    width: 100%;
+    min-width: 0;
+}
+/* ========================================
+   AJUSTE RESPONSIVE COLECCIÓN
+======================================== */
+
+.collection,
+.collection * {
+    box-sizing: border-box;
+}
+
+.collection-header,
+.collection-progress,
+.collection-categories,
+.collection-grid,
+.collection-card {
+    width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 480px) {
+
+    .collection {
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 20px 100px;
+    }
+
+    .collection-header {
+        flex-shrink: 0;
+    }
+
+    .collection-progress {
+        flex-shrink: 0;
+    }
+
+    .collection-categories {
+        flex-shrink: 0;
+    }
 }
