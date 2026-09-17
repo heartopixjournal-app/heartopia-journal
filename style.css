@@ -760,3 +760,186 @@ color: var(--brown);
 
     color: var(--brown);
 }
+/* ========================================
+   COLECCIÓN
+======================================== */
+
+.collection {
+    min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 35px 24px 105px;
+    flex-direction: column;
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf2 0%,
+            #f9f1e8 100%
+        );
+}
+
+.collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.collection-header h2 {
+    margin-top: 3px;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 500;
+    color: #385542;
+}
+
+.collection-subtitle {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #82776e;
+}
+
+.search-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 1px solid rgba(97,122,99,.18);
+    color: var(--sage-dark);
+    font-size: 25px;
+}
+
+.collection-progress {
+    padding: 22px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background:
+        linear-gradient(
+            135deg,
+            #dbe4d5,
+            #eee0df
+        );
+    box-shadow: var(--shadow);
+}
+
+.collection-progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-progress h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3d5544;
+}
+
+.collection-percentage {
+    font-family: "Playfair Display", serif;
+    font-size: 31px;
+    color: var(--sage-dark);
+}
+
+.collection-count {
+    font-size: 13px;
+    color: #667067;
+}
+
+.collection-categories h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3d5544;
+}
+
+.collection-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.collection-card {
+    width: 100%;
+    min-height: 78px;
+    padding: 13px 16px;
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 12px;
+
+    border: 0;
+    border-radius: 20px;
+
+    text-align: left;
+    color: var(--text);
+
+    box-shadow:
+        0 6px 18px
+        rgba(78,73,62,.06);
+}
+
+.collection-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    background: rgba(255,255,255,.48);
+    font-size: 25px;
+}
+
+.collection-card strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.collection-card small {
+    display: block;
+    margin-top: 3px;
+    color: rgba(57,69,60,.62);
+}
+
+.collection-arrow {
+    padding-right: 4px;
+    font-size: 27px;
+    color: rgba(57,69,60,.45);
+}
+
+/* Colores de categorías */
+
+.fish-card {
+    background: #d7e4eb;
+}
+
+.insect-card {
+    background: #e7e1ca;
+}
+
+.bird-card {
+    background: #e3ddeb;
+}
+
+.animal-card {
+    background: #ead9cf;
+}
+
+.flower-collection-card {
+    background: #efd5da;
+}
+
+.crop-card {
+    background: #dce7d7;
+}
+
+.collectible-card {
+    background: #ead8c7;
+}
+
+.recipe-card {
+    background: #f1dfa9;
+}
