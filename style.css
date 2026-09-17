@@ -1,0 +1,346 @@
+/* ========================================
+   HEARTOPIA JOURNAL
+   Design System — V0.1
+======================================== */
+
+:root {
+
+    /* Colores principales */
+    --cream: #FBF5EA;
+    --paper: #FFF9F0;
+
+    --sage: #A8B9A3;
+    --sage-dark: #617A63;
+
+    --pink: #E9C3C8;
+    --lavender: #CEC4DB;
+    --blue: #B9CEDA;
+    --yellow: #F1D69A;
+    --peach: #DFA782;
+
+    --brown: #806A5D;
+    --text: #39453C;
+
+    /* Sombras */
+    --shadow:
+        0 10px 30px rgba(78, 73, 62, 0.12);
+
+    /* Bordes */
+    --radius-small: 12px;
+    --radius-medium: 20px;
+    --radius-large: 32px;
+}
+
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--text);
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf2 0%,
+            #f8eee2 100%
+        );
+
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   WELCOME SCREEN
+======================================== */
+
+.welcome {
+    position: relative;
+
+    min-height: 100vh;
+    max-width: 480px;
+
+    margin: 0 auto;
+    padding: 55px 28px 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* pequeño detalle superior */
+
+.welcome-decoration {
+    position: absolute;
+
+    top: 22px;
+    right: 25px;
+
+    font-size: 28px;
+
+    transform: rotate(15deg);
+}
+
+
+/* contenido */
+
+.welcome-content {
+    text-align: center;
+}
+
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: var(--sage-dark);
+
+    margin-bottom: 15px;
+}
+
+
+/* LOGO */
+
+h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 13vw, 58px);
+
+    font-weight: 600;
+
+    line-height: .9;
+
+    color: #385542;
+
+    margin-bottom: 20px;
+}
+
+
+h1 span {
+    display: block;
+
+    font-weight: 500;
+}
+
+
+/* tagline */
+
+.tagline {
+    text-transform: uppercase;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    color: var(--brown);
+
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   ILUSTRACIÓN
+======================================== */
+
+.illustration {
+    position: relative;
+
+    width: 100%;
+    height: 260px;
+
+    margin-bottom: 30px;
+
+    border-radius: var(--radius-large);
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #dce9ed 0%,
+            #e8dce4 42%,
+            #d7dfc5 100%
+        );
+
+    box-shadow: var(--shadow);
+}
+
+
+.landscape {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.sun {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: var(--yellow);
+
+    top: 42px;
+    right: 55px;
+
+    opacity: .85;
+}
+
+
+.cloud {
+    position: absolute;
+
+    color: rgba(255,255,255,.8);
+
+    font-size: 45px;
+}
+
+
+.cloud-one {
+    top: 25px;
+    left: 35px;
+}
+
+
+.cloud-two {
+    top: 70px;
+    right: 25px;
+
+    font-size: 30px;
+}
+
+
+.hills {
+    position: absolute;
+
+    bottom: 48px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+
+    font-size: 58px;
+}
+
+
+.hills span:nth-child(2) {
+    font-size: 80px;
+}
+
+
+.flowers {
+    position: absolute;
+
+    bottom: 15px;
+
+    width: 100%;
+
+    font-size: 23px;
+
+    letter-spacing: 4px;
+}
+
+
+/* ========================================
+   TEXTO
+======================================== */
+
+.description {
+    max-width: 320px;
+
+    margin: 0 auto 28px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #687068;
+}
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+button {
+    width: 100%;
+
+    border: none;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+button:active {
+    transform: scale(.98);
+}
+
+
+.primary-button {
+    padding: 16px;
+
+    border-radius: 999px;
+
+    color: white;
+
+    background: var(--sage-dark);
+
+    box-shadow:
+        0 7px 20px rgba(79, 105, 83, .22);
+
+    margin-bottom: 12px;
+}
+
+
+.secondary-button {
+    padding: 14px;
+
+    border-radius: 999px;
+
+    color: var(--sage-dark);
+
+    background: rgba(255,255,255,.65);
+
+    border: 1px solid rgba(97,122,99,.25);
+}
+
+
+/* ========================================
+   FRASE FINAL
+======================================== */
+
+.footer-message {
+    margin-top: auto;
+
+    padding-top: 30px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+
+    font-size: 13px;
+
+    color: var(--brown);
+}
