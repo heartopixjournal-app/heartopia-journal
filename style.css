@@ -756,10 +756,6 @@ color: var(--brown);
 .nav-item.active {
     color: var(--sage-dark);
 }
-    font-size: 13px;
-
-    color: var(--brown);
-}
 /* ========================================
    COLECCIÓN
 ======================================== */
