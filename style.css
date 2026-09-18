@@ -1205,3 +1205,7 @@ color: var(--brown);
     color: white;
     font-size: 10px;
 }
+/* Ajuste flecha tarjeta Peces */
+#openFishCollection .collection-arrow {
+    padding-right: 4px;
+}
