@@ -1136,7 +1136,7 @@ color: var(--brown);
     gap: 13px;
 }
 
-.fish-card {
+.fish-grid .fish-card {
     min-width: 0;
     overflow: hidden;
     padding: 0;
@@ -1176,7 +1176,7 @@ color: var(--brown);
     color: var(--sage-dark);
 }
 
-.fish-card strong {
+.fish-grid .fish-card strong {
     display: block;
     min-height: 44px;
     font-family: "Playfair Display", serif;
@@ -1204,8 +1204,4 @@ color: var(--brown);
     background: var(--sage-dark);
     color: white;
     font-size: 10px;
-}
-/* Alinear flecha de la tarjeta Peces */
-#openFishCollection .collection-arrow {
-    margin-right: 4px;
 }
