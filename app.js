@@ -67,3 +67,35 @@ collectionHomeButton.addEventListener("click", () => {
     });
 
 });
+/* ========================================
+   NAVEGACIÓN: COLECCIÓN → PECES
+======================================== */
+
+const collectionScreen = document.getElementById("collectionScreen");
+const fishScreen = document.getElementById("fishScreen");
+const openFishCollection = document.getElementById("openFishCollection");
+const backToCollection = document.getElementById("backToCollection");
+
+if (openFishCollection && fishScreen && collectionScreen) {
+    openFishCollection.addEventListener("click", () => {
+        collectionScreen.classList.remove("active");
+        fishScreen.classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    });
+}
+
+if (backToCollection && fishScreen && collectionScreen) {
+    backToCollection.addEventListener("click", () => {
+        fishScreen.classList.remove("active");
+        collectionScreen.classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    });
+}
