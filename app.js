@@ -71,7 +71,6 @@ collectionHomeButton.addEventListener("click", () => {
    NAVEGACIÓN: COLECCIÓN → PECES
 ======================================== */
 
-const collectionScreen = document.getElementById("collectionScreen");
 const fishScreen = document.getElementById("fishScreen");
 const openFishCollection = document.getElementById("openFishCollection");
 const backToCollection = document.getElementById("backToCollection");
