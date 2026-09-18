@@ -996,3 +996,212 @@ color: var(--brown);
         flex-shrink: 0;
     }
 }
+/* ========================================
+   PECES V1
+======================================== */
+
+.fish-screen {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 22px 105px;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: linear-gradient(
+        180deg,
+        #fffaf2 0%,
+        #f9f1e8 100%
+    );
+}
+
+.fish-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.back-button {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(97,122,99,.18);
+    background: var(--paper);
+    color: var(--sage-dark);
+    font-size: 30px;
+    line-height: 1;
+}
+
+.fish-header h2 {
+    margin-top: 2px;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 500;
+    color: #385542;
+}
+
+.fish-subtitle {
+    margin-top: 2px;
+    font-size: 13px;
+    color: #82776e;
+}
+
+.fish-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 22px;
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        #dbe4d5,
+        #eee0df
+    );
+}
+
+.fish-progress h3 {
+    margin-top: 2px;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #3d5544;
+}
+
+.fish-progress-number {
+    font-family: "Playfair Display", serif;
+    font-size: 29px;
+    color: var(--sage-dark);
+}
+
+.fish-progress-number small {
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    color: #82776e;
+}
+
+.fish-filters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.fish-filter {
+    padding: 10px 5px;
+    border: 1px solid rgba(97,122,99,.15);
+    border-radius: 999px;
+    background: var(--paper);
+    color: #77776f;
+    font-size: 12px;
+}
+
+.fish-filter.active {
+    background: var(--sage-dark);
+    color: white;
+}
+
+.fish-search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 15px;
+    height: 46px;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1px solid rgba(97,122,99,.12);
+}
+
+.fish-search span {
+    color: var(--sage-dark);
+    font-size: 21px;
+}
+
+.fish-search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.fish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.fish-card {
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    border-radius: 22px;
+    background: var(--paper);
+    text-align: left;
+    box-shadow: 0 7px 20px rgba(78,73,62,.07);
+}
+
+.fish-image-box {
+    width: 100%;
+    aspect-ratio: 1.25 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f6f2ec;
+}
+
+.fish-image-box img {
+    width: 92%;
+    height: 92%;
+    object-fit: contain;
+}
+
+.fish-card-info {
+    padding: 12px 13px 14px;
+}
+
+.fish-habitat {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: var(--sage-dark);
+}
+
+.fish-card strong {
+    display: block;
+    min-height: 44px;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    line-height: 1.25;
+    color: #3d5544;
+}
+
+.fish-stars {
+    margin-top: 7px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #d7a62a;
+    white-space: nowrap;
+}
+
+.fish-stars.completed span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+    border-radius: 50%;
+    background: var(--sage-dark);
+    color: white;
+    font-size: 10px;
+}
