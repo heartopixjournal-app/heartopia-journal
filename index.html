@@ -545,17 +545,209 @@
 
         </button>
 
+<main class="fish screen" id="fishScreen">
+
+    <!-- CABECERA -->
+    <header class="fish-header">
+
+        <button class="fish-back-button"
+                id="backToCollection"
+                aria-label="Volver a colección">
+            ‹
+        </button>
+
+        <div>
+            <p class="card-label">MI COLECCIÓN</p>
+            <h2>Peces</h2>
+            <p class="fish-subtitle">
+                Registra tus capturas y completa las 5 estrellas.
+            </p>
+        </div>
+
+    </header>
+
+
+    <!-- PROGRESO -->
+    <section class="fish-progress">
+
+        <div class="fish-progress-info">
+            <div>
+                <p class="card-label">PROGRESO</p>
+                <h3>Tu colección de peces</h3>
+            </div>
+
+            <span>0%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+        </div>
+
+        <p>0 de 3 peces registrados</p>
+
     </section>
 
 
+    <!-- FILTROS -->
+    <section class="fish-filters">
+
+        <p class="card-label">HÁBITAT</p>
+
+        <div class="fish-filter-buttons">
+
+            <button class="fish-filter active"
+                    data-filter="all">
+                Todos
+            </button>
+
+            <button class="fish-filter"
+                    data-filter="river">
+                Río
+            </button>
+
+            <button class="fish-filter"
+                    data-filter="lake">
+                Lago
+            </button>
+
+            <button class="fish-filter"
+                    data-filter="sea">
+                Mar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section class="fish-catalog">
+
+        <div class="fish-section-heading">
+            <div>
+                <p class="card-label">CATÁLOGO</p>
+                <h3>Todos los peces</h3>
+            </div>
+
+            <span class="fish-result-count">
+                3 especies
+            </span>
+        </div>
+
+
+        <div class="fish-grid">
+
+            <!-- PERCA DE RÍO -->
+            <button class="fish-card"
+                    data-habitat="river">
+
+                <div class="fish-image-placeholder">
+                    🐟
+                </div>
+
+                <div class="fish-card-info">
+
+                    <span class="fish-habitat">
+                        RÍO
+                    </span>
+
+                    <strong>Perca de río</strong>
+
+                    <div class="fish-stars"
+                         aria-label="2 de 5 estrellas">
+                        ★★☆☆☆
+                    </div>
+
+                    <small>
+                        2 de 5 estrellas
+                    </small>
+
+                </div>
+
+                <span class="fish-arrow">›</span>
+
+            </button>
+
+
+            <!-- CACHO EUROPEO -->
+            <button class="fish-card"
+                    data-habitat="lake">
+
+                <div class="fish-image-placeholder">
+                    🐟
+                </div>
+
+                <div class="fish-card-info">
+
+                    <span class="fish-habitat">
+                        LAGO
+                    </span>
+
+                    <strong>Cacho europeo</strong>
+
+                    <div class="fish-stars"
+                         aria-label="5 de 5 estrellas">
+                        ★★★★★
+                    </div>
+
+                    <small>
+                        5 de 5 estrellas
+                    </small>
+
+                </div>
+
+                <span class="fish-arrow">›</span>
+
+            </button>
+
+
+            <!-- SARDINA -->
+            <button class="fish-card"
+                    data-habitat="sea">
+
+                <div class="fish-image-placeholder">
+                    🐟
+                </div>
+
+                <div class="fish-card-info">
+
+                    <span class="fish-habitat">
+                        MAR
+                    </span>
+
+                    <strong>Sardina</strong>
+
+                    <div class="fish-stars"
+                         aria-label="4 de 5 estrellas">
+                        ★★★★☆
+                    </div>
+
+                    <small>
+                        4 de 5 estrellas
+                    </small>
+
+                </div>
+
+                <span class="fish-arrow">›</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- NAVEGACIÓN INFERIOR -->
     <nav class="bottom-navigation">
 
-        <button class="nav-item">
+        <button class="nav-item"
+                id="fishHomeButton">
             <span>⌂</span>
             <small>Inicio</small>
         </button>
 
-        <button class="nav-item active">
+        <button class="nav-item active"
+                id="fishCollectionButton">
             <span>♡</span>
             <small>Colección</small>
         </button>
