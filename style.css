@@ -997,216 +997,7 @@ color: var(--brown);
     }
 }
 /* ========================================
-   PECES V1
-======================================== */
-
-.fish-screen {
-    width: 100%;
-    max-width: 480px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 32px 22px 105px;
-    flex-direction: column;
-    overflow-x: hidden;
-    background: linear-gradient(
-        180deg,
-        #fffaf2 0%,
-        #f9f1e8 100%
-    );
-}
-
-.fish-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.back-button {
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid rgba(97,122,99,.18);
-    background: var(--paper);
-    color: var(--sage-dark);
-    font-size: 30px;
-    line-height: 1;
-}
-
-.fish-header h2 {
-    margin-top: 2px;
-    font-family: "Playfair Display", serif;
-    font-size: 34px;
-    font-weight: 500;
-    color: #385542;
-}
-
-.fish-subtitle {
-    margin-top: 2px;
-    font-size: 13px;
-    color: #82776e;
-}
-
-.fish-progress {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    margin-bottom: 22px;
-    border-radius: 24px;
-    background: linear-gradient(
-        135deg,
-        #dbe4d5,
-        #eee0df
-    );
-}
-
-.fish-progress h3 {
-    margin-top: 2px;
-    font-family: "Playfair Display", serif;
-    font-size: 21px;
-    font-weight: 500;
-    color: #3d5544;
-}
-
-.fish-progress-number {
-    font-family: "Playfair Display", serif;
-    font-size: 29px;
-    color: var(--sage-dark);
-}
-
-.fish-progress-number small {
-    font-family: "Nunito", sans-serif;
-    font-size: 12px;
-    color: #82776e;
-}
-
-.fish-filters {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 7px;
-    margin-bottom: 15px;
-}
-
-.fish-filter {
-    padding: 10px 5px;
-    border: 1px solid rgba(97,122,99,.15);
-    border-radius: 999px;
-    background: var(--paper);
-    color: #77776f;
-    font-size: 12px;
-}
-
-.fish-filter.active {
-    background: var(--sage-dark);
-    color: white;
-}
-
-.fish-search {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    padding: 0 15px;
-    height: 46px;
-    margin-bottom: 20px;
-    border-radius: 999px;
-    background: var(--paper);
-    border: 1px solid rgba(97,122,99,.12);
-}
-
-.fish-search span {
-    color: var(--sage-dark);
-    font-size: 21px;
-}
-
-.fish-search input {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    font-family: "Nunito", sans-serif;
-    font-size: 13px;
-    color: var(--text);
-}
-
-.fish-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 13px;
-}
-
-.fish-grid .fish-card {
-    min-width: 0;
-    overflow: hidden;
-    padding: 0;
-    border: 0;
-    border-radius: 22px;
-    background: var(--paper);
-    text-align: left;
-    box-shadow: 0 7px 20px rgba(78,73,62,.07);
-}
-
-.fish-image-box {
-    width: 100%;
-    aspect-ratio: 1.25 / 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #f6f2ec;
-}
-
-.fish-image-box img {
-    width: 92%;
-    height: 92%;
-    object-fit: contain;
-}
-
-.fish-card-info {
-    padding: 12px 13px 14px;
-}
-
-.fish-habitat {
-    display: block;
-    margin-bottom: 3px;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
-    color: var(--sage-dark);
-}
-
-.fish-grid .fish-card strong {
-    display: block;
-    min-height: 44px;
-    font-family: "Playfair Display", serif;
-    font-size: 17px;
-    line-height: 1.25;
-    color: #3d5544;
-}
-
-.fish-stars {
-    margin-top: 7px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #d7a62a;
-    white-space: nowrap;
-}
-
-.fish-stars.completed span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-    margin-left: 3px;
-    border-radius: 50%;
-    background: var(--sage-dark);
-    color: white;
-    font-size: 10px;
-}
-/* ========================================
-   CORRECCIÓN LAYOUT PANTALLA PECES
+   PANTALLA PECES
 ======================================== */
 
 #fishScreen {
@@ -1220,87 +1011,337 @@ color: var(--brown);
     max-width: 480px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 35px 24px 105px;
+    padding: 32px 22px 105px;
     box-sizing: border-box;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #fffaf2 0%,
+        #f9f1e8 100%
+    );
 }
 
-/* Cabecera */
 
-#fishScreen .fish-header {
+/* ---------- CABECERA ---------- */
+
+.fish-header {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
     margin-bottom: 24px;
 }
 
-#fishScreen .fish-header > div {
+.fish-header > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.fish-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 42px;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    border: 1px solid rgba(97, 122, 99, .18);
+    border-radius: 50%;
+
+    background: var(--paper);
+    color: var(--sage-dark);
+
+    font-size: 28px;
+    line-height: 1;
+}
+
+.fish-header h2 {
+    margin: 2px 0 3px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 500;
+
+    color: #385542;
+}
+
+.fish-subtitle {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    color: #82776e;
+}
+
+
+/* ---------- PROGRESO ---------- */
+
+.fish-progress {
+    display: block;
+    width: 100%;
+
+    padding: 20px;
+    margin-bottom: 26px;
+
+    box-sizing: border-box;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        135deg,
+        #dbe4d5,
+        #eee0df
+    );
+}
+
+.fish-progress-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+
+    width: 100%;
+}
+
+.fish-progress-info > div {
     flex: 1;
 }
 
-#fishScreen .fish-header h2 {
-    margin: 2px 0 4px;
+.fish-progress h3 {
+    margin: 2px 0 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    color: #3d5544;
 }
 
-#fishScreen .fish-back-button {
+.fish-progress-info > span {
     flex-shrink: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+
+    color: var(--sage-dark);
 }
 
-/* Progreso */
-
-#fishScreen .fish-progress {
+.fish-progress .progress-bar {
     width: 100%;
-    margin-bottom: 24px;
+    margin: 17px 0 10px;
 }
 
-#fishScreen .fish-progress-info {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.fish-progress > p {
+    margin: 0;
+
+    font-size: 12px;
+    color: #74776f;
 }
 
-/* Filtros */
 
-#fishScreen .fish-filters {
+/* ---------- FILTROS ---------- */
+
+.fish-filters {
+    display: block;
     width: 100%;
-    margin-bottom: 26px;
+
+    margin-bottom: 27px;
 }
 
-#fishScreen .fish-filter-buttons {
-    width: 100%;
+.fish-filter-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
+    width: 100%;
     margin-top: 10px;
 }
 
-#fishScreen .fish-filter {
+.fish-filter {
     width: auto;
+
+    padding: 9px 17px;
+
+    border: 1px solid rgba(97, 122, 99, .15);
+    border-radius: 999px;
+
+    background: var(--paper);
+    color: #77776f;
+
+    font-size: 12px;
 }
 
-/* Catálogo */
+.fish-filter.active {
+    background: var(--sage-dark);
+    color: white;
+}
 
-#fishScreen .fish-catalog {
+
+/* ---------- CATÁLOGO ---------- */
+
+.fish-catalog {
+    display: block;
     width: 100%;
 }
 
-#fishScreen .fish-section-heading {
-    width: 100%;
+.fish-section-heading {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 15px;
+
+    width: 100%;
     margin-bottom: 16px;
 }
 
-#fishScreen .fish-grid {
-    width: 100%;
+.fish-section-heading h3 {
+    margin: 2px 0 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+
+    color: #3d5544;
+}
+
+.fish-result-count {
+    flex-shrink: 0;
+
+    font-size: 12px;
+    color: #82776e;
+}
+
+
+/* ---------- TARJETAS ---------- */
+
+.fish-grid {
     display: grid;
+
+    width: 100%;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
 }
 
-#fishScreen .fish-card {
+.fish-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
     min-width: 0;
+    min-height: 190px;
+
+    padding: 16px;
+
+    box-sizing: border-box;
+
+    border: 0;
+    border-radius: 22px;
+
+    background: var(--paper);
+
+    text-align: left;
+
+    box-shadow: 0 7px 20px rgba(78, 73, 62, .07);
+}
+
+.fish-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 12px;
+
+    border-radius: 13px;
+
+    background: #d7e4eb;
+
+    font-size: 21px;
+}
+
+.fish-card-info {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 0;
+}
+
+.fish-habitat {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 10px;
+    letter-spacing: 1.3px;
+
+    color: var(--sage-dark);
+}
+
+.fish-card strong {
+    display: block;
+
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    line-height: 1.25;
+
+    color: #3d5544;
+}
+
+.fish-stars {
+    margin-top: auto;
+    padding-top: 14px;
+
+    font-size: 15px;
+    letter-spacing: 0;
+
+    color: #d7a62a;
+
+    white-space: nowrap;
+}
+
+.fish-card small {
+    margin-top: 3px;
+
+    font-size: 10px;
+    color: #77776f;
+}
+
+.fish-arrow {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    color: #a0aa9d;
+}
+
+
+/* ---------- MÓVILES MUY PEQUEÑOS ---------- */
+
+@media (max-width: 360px) {
+
+    #fishScreen.active {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .fish-grid {
+        gap: 9px;
+    }
+
+    .fish-card {
+        padding: 13px;
+    }
 }
