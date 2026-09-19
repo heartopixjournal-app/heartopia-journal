@@ -1205,3 +1205,102 @@ color: var(--brown);
     color: white;
     font-size: 10px;
 }
+/* ========================================
+   CORRECCIÓN LAYOUT PANTALLA PECES
+======================================== */
+
+#fishScreen {
+    display: none;
+}
+
+#fishScreen.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 35px 24px 105px;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+
+#fishScreen .fish-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+#fishScreen .fish-header > div {
+    flex: 1;
+}
+
+#fishScreen .fish-header h2 {
+    margin: 2px 0 4px;
+}
+
+#fishScreen .fish-back-button {
+    flex-shrink: 0;
+}
+
+/* Progreso */
+
+#fishScreen .fish-progress {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#fishScreen .fish-progress-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Filtros */
+
+#fishScreen .fish-filters {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+#fishScreen .fish-filter-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+#fishScreen .fish-filter {
+    width: auto;
+}
+
+/* Catálogo */
+
+#fishScreen .fish-catalog {
+    width: 100%;
+}
+
+#fishScreen .fish-section-heading {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+#fishScreen .fish-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+#fishScreen .fish-card {
+    width: 100%;
+    min-width: 0;
+}
