@@ -120,3 +120,116 @@ if (currentDate) {
     );
 
 }
+/* ========================================
+   CATÁLOGO DINÁMICO DE PECES
+======================================== */
+
+const fishGrid = document.getElementById("fishGrid");
+const fishResultCount = document.getElementById("fishResultCount");
+
+function getFishHabitat(location) {
+    const place = location.toLowerCase();
+
+    if (place.includes("lago")) {
+        return "lake";
+    }
+
+    if (place.includes("río") || place.includes("rio")) {
+        return "river";
+    }
+
+    if (place.includes("mar")) {
+        return "sea";
+    }
+
+    return "other";
+}
+
+
+function getFishHabitatLabel(location) {
+    const habitat = getFishHabitat(location);
+
+    if (habitat === "lake") return "LAGO";
+    if (habitat === "river") return "RÍO";
+    if (habitat === "sea") return "MAR";
+
+    return location.toUpperCase();
+}
+
+
+function createFishStars(number) {
+    const filled = "★".repeat(number);
+    const empty = "☆".repeat(5 - number);
+
+    return filled + empty;
+}
+
+
+function renderFish(fishes) {
+
+    if (!fishGrid) return;
+
+    fishGrid.innerHTML = "";
+
+    fishes.forEach((fish) => {
+
+        const habitat = getFishHabitat(fish.ubicacion);
+
+        const card = document.createElement("button");
+
+        card.className = "fish-card";
+        card.dataset.habitat = habitat;
+        card.dataset.fish = fish.id;
+
+        card.innerHTML = `
+            <div class="fish-image-placeholder">
+                🐟
+            </div>
+
+            <div class="fish-card-info">
+
+                <span class="fish-habitat">
+                    ${getFishHabitatLabel(fish.ubicacion)}
+                </span>
+
+                <strong>
+                    ${fish.nombre}
+                </strong>
+
+                <div
+                    class="fish-stars"
+                    aria-label="${fish.estrellas} de 5 estrellas"
+                >
+                    ${createFishStars(fish.estrellas)}
+                </div>
+
+                <small>
+                    ${fish.ubicacion}
+                </small>
+
+            </div>
+
+            <span class="fish-arrow">›</span>
+        `;
+
+        fishGrid.appendChild(card);
+    });
+
+
+    if (fishResultCount) {
+
+        fishResultCount.textContent =
+            `${fishes.length} ${
+                fishes.length === 1
+                    ? "especie"
+                    : "especies"
+            }`;
+    }
+}
+
+
+/* CARGAR PECES */
+
+if (typeof fishData !== "undefined") {
+    renderFish(fishData);
+}
