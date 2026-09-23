@@ -512,6 +512,188 @@
     </nav>
 
 </main>
+<!-- =====================================
+     FICHA INDIVIDUAL DE PEZ
+===================================== -->
+
+<main class="fish-detail screen" id="fishDetailScreen">
+
+    <!-- CABECERA -->
+
+    <header class="fish-detail-header">
+
+        <button
+            class="fish-detail-back"
+            id="backToFishCatalog"
+            aria-label="Volver a peces"
+        >
+            ‹
+        </button>
+
+        <p class="home-eyebrow">
+            GUÍA DE PESCA
+        </p>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="fish-detail-hero">
+
+        <div
+            class="fish-detail-image"
+            id="fishDetailImage"
+        >
+            🐟
+        </div>
+
+        <div class="fish-detail-title">
+
+            <h2 id="fishDetailName">
+                Pez
+            </h2>
+
+            <div
+                class="fish-detail-stars"
+                id="fishDetailStars"
+            >
+                ☆☆☆☆☆
+            </div>
+
+            <p id="fishDetailLocation">
+                Ubicación
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMAS DE OBTENCIÓN -->
+
+    <section class="fish-detail-section">
+
+        <p class="card-label">
+            FORMAS DE OBTENCIÓN
+        </p>
+
+        <div class="fish-detail-info-grid">
+
+            <div class="fish-info-card">
+
+                <span class="fish-info-icon">
+                    ◉
+                </span>
+
+                <small>LUGAR</small>
+
+                <strong id="fishDetailPlace">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="fish-info-card">
+
+                <span class="fish-info-icon">
+                    ◷
+                </span>
+
+                <small>ACTIVIDAD</small>
+
+                <strong id="fishDetailActivity">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="fish-weather-card">
+
+            <div>
+                <small>CLIMA</small>
+
+                <strong>
+                    Cuándo aparece
+                </strong>
+            </div>
+
+            <div
+                class="fish-weather-list"
+                id="fishDetailWeather"
+            >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PESOS -->
+
+    <section class="fish-detail-section">
+
+        <p class="card-label">
+            PESO POR CALIDAD
+        </p>
+
+        <div
+            class="fish-weight-list"
+            id="fishDetailWeights"
+        >
+        </div>
+
+    </section>
+
+
+    <!-- ANÉCDOTA -->
+
+    <section class="fish-detail-section">
+
+        <p class="card-label">
+            ANÉCDOTA
+        </p>
+
+        <div class="fish-anecdote-card">
+
+            <span>❝</span>
+
+            <p id="fishDetailAnecdote">
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLECCIÓN PERSONAL -->
+
+    <section class="fish-personal-section">
+
+        <div>
+            <p class="card-label">
+                MI COLECCIÓN
+            </p>
+
+            <h3>
+                ¿Ya lo conseguiste?
+            </h3>
+        </div>
+
+        <button
+            class="fish-collected-button"
+            id="fishCollectedButton"
+        >
+            ✓ Lo conseguí
+        </button>
+
+    </section>
+
+</main>
 <script src="fish-data.js"></script>
 <script src="app.js"></script>
 </body>
