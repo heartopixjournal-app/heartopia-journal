@@ -674,25 +674,40 @@
 
     <section class="fish-personal-section">
 
-        <div>
-            <p class="card-label">
-                MI COLECCIÓN
-            </p>
+    <div>
+        <p class="card-label">
+            MI COLECCIÓN
+        </p>
 
-            <h3>
-                ¿Ya lo conseguiste?
-            </h3>
-        </div>
+        <h3>
+            Mi mejor captura
+        </h3>
 
-        <button
-            class="fish-collected-button"
-            id="fishCollectedButton"
-        >
-            ✓ Lo conseguí
-        </button>
+        <p class="fish-personal-help">
+            Marca la mejor calidad que has conseguido.
+        </p>
+    </div>
 
-    </section>
+    <div
+        class="fish-personal-stars"
+        id="fishPersonalStars"
+        aria-label="Calidad conseguida"
+    >
+        <button type="button" data-stars="1">☆</button>
+        <button type="button" data-stars="2">☆</button>
+        <button type="button" data-stars="3">☆</button>
+        <button type="button" data-stars="4">☆</button>
+        <button type="button" data-stars="5">☆</button>
+    </div>
 
+    <p
+        class="fish-personal-status"
+        id="fishPersonalStatus"
+    >
+        Aún no registrado
+    </p>
+
+</section>
 </main>
 <script src="fish-data.js"></script>
 <script src="app.js"></script>
