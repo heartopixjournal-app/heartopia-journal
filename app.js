@@ -233,3 +233,30 @@ function renderFish(fishes) {
 if (typeof fishData !== "undefined") {
     renderFish(fishData);
 }
+/* ========================================
+   PROGRESO DE LA COLECCIÓN DE PECES
+======================================== */
+
+const fishProgressText =
+    document.getElementById("fishProgressText");
+
+function updateFishProgress() {
+
+    if (typeof fishData === "undefined") return;
+
+    const totalFish = fishData.length;
+
+    /*
+       Más adelante este valor se calculará
+       con los peces que el usuario marque
+       como conseguidos.
+    */
+    const collectedFish = 0;
+
+    if (fishProgressText) {
+        fishProgressText.textContent =
+            `${collectedFish} de ${totalFish} peces registrados`;
+    }
+}
+
+updateFishProgress();
