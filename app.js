@@ -260,3 +260,193 @@ function updateFishProgress() {
 }
 
 updateFishProgress();
+/* ========================================
+   FICHA INDIVIDUAL DE PEZ
+======================================== */
+
+const fishDetailScreen =
+    document.getElementById("fishDetailScreen");
+
+const backToFishCatalog =
+    document.getElementById("backToFishCatalog");
+
+const fishDetailName =
+    document.getElementById("fishDetailName");
+
+const fishDetailStars =
+    document.getElementById("fishDetailStars");
+
+const fishDetailLocation =
+    document.getElementById("fishDetailLocation");
+
+const fishDetailPlace =
+    document.getElementById("fishDetailPlace");
+
+const fishDetailActivity =
+    document.getElementById("fishDetailActivity");
+
+const fishDetailWeather =
+    document.getElementById("fishDetailWeather");
+
+const fishDetailWeights =
+    document.getElementById("fishDetailWeights");
+
+const fishDetailAnecdote =
+    document.getElementById("fishDetailAnecdote");
+
+
+/* ---------- CLIMA ---------- */
+
+function formatFishWeather(weather) {
+
+    const weatherLabels = {
+        soleado: "☀️ Soleado",
+        lluvia: "🌧️ Lluvia",
+        arcoiris: "🌈 Arcoíris"
+    };
+
+    return weatherLabels[weather] || weather;
+}
+
+
+/* ---------- RELLENAR FICHA ---------- */
+
+function openFishDetail(fish) {
+
+    if (!fishDetailScreen) return;
+
+    if (fishDetailName) {
+        fishDetailName.textContent = fish.nombre;
+    }
+
+    if (fishDetailStars) {
+        fishDetailStars.textContent =
+            createFishStars(fish.estrellas);
+    }
+
+    if (fishDetailLocation) {
+        fishDetailLocation.textContent =
+            fish.ubicacion;
+    }
+
+    if (fishDetailPlace) {
+        fishDetailPlace.textContent =
+            fish.ubicacion;
+    }
+
+    if (fishDetailActivity) {
+        fishDetailActivity.textContent =
+            fish.actividad || "—";
+    }
+
+
+    /* CLIMA */
+
+    if (fishDetailWeather) {
+
+        fishDetailWeather.innerHTML = "";
+
+        const weatherList =
+            Array.isArray(fish.clima)
+                ? fish.clima
+                : [];
+
+        weatherList.forEach((weather) => {
+
+            const chip =
+                document.createElement("span");
+
+            chip.className = "weather-chip";
+
+            chip.textContent =
+                formatFishWeather(weather);
+
+            fishDetailWeather.appendChild(chip);
+        });
+    }
+
+
+    /* PESOS */
+
+    if (fishDetailWeights) {
+
+        fishDetailWeights.innerHTML = "";
+
+        for (let stars = 1; stars <= 5; stars++) {
+
+            const row =
+                document.createElement("div");
+
+            row.className = "fish-weight-row";
+
+            const weight =
+                fish.pesos && fish.pesos[stars]
+                    ? fish.pesos[stars]
+                    : "—";
+
+            row.innerHTML = `
+                <span class="fish-weight-stars">
+                    ${"★".repeat(stars)}
+                </span>
+
+                <span class="fish-weight-value">
+                    ${weight}
+                </span>
+            `;
+
+            fishDetailWeights.appendChild(row);
+        }
+    }
+
+
+    /* ANÉCDOTA */
+
+    if (fishDetailAnecdote) {
+        fishDetailAnecdote.textContent =
+            fish.anecdota || "Sin información.";
+    }
+
+
+    /* MOSTRAR FICHA */
+
+    showScreen(fishDetailScreen);
+}
+
+
+/* ---------- TARJETAS → FICHA ---------- */
+
+if (fishGrid) {
+
+    fishGrid.addEventListener("click", (event) => {
+
+        const card =
+            event.target.closest(".fish-card");
+
+        if (!card) return;
+
+        if (typeof fishData === "undefined") return;
+
+        const selectedFish =
+            fishData.find(
+                (fish) =>
+                    fish.id === card.dataset.fish
+            );
+
+        if (!selectedFish) return;
+
+        openFishDetail(selectedFish);
+    });
+}
+
+
+/* ---------- FICHA → CATÁLOGO ---------- */
+
+if (backToFishCatalog && fishScreen) {
+
+    backToFishCatalog.addEventListener(
+        "click",
+        () => {
+            showScreen(fishScreen);
+        }
+    );
+}
