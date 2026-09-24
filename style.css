@@ -1728,3 +1728,131 @@ color: var(--brown);
         justify-content: flex-start;
     }
 }
+
+/* ========================================
+   ESTRELLAS INTERACTIVAS DE PECES
+======================================== */
+
+.fish-detail-stars.fish-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 12px 0 8px;
+}
+
+.fish-rating button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 42px;
+    padding: 0;
+
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+
+    color: #c8c2b6;
+    font-family: inherit;
+    font-size: 34px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        color 180ms ease,
+        transform 180ms ease,
+        text-shadow 180ms ease;
+}
+
+.fish-rating button.selected {
+    color: #e5ac32;
+    text-shadow: 0 2px 8px rgba(229, 172, 50, 0.2);
+}
+
+.fish-rating button:hover {
+    transform: scale(1.12);
+}
+
+.fish-rating button:focus-visible {
+    outline: 2px solid var(--sage-dark);
+    outline-offset: 3px;
+}
+
+/* DESTELLO AL SELECCIONAR */
+
+.fish-rating button.star-sparkle {
+    animation: fish-star-sparkle 550ms ease-out;
+}
+
+.fish-rating button.star-sparkle::after {
+    content: "✦";
+    position: absolute;
+    top: -9px;
+    right: -8px;
+
+    color: #f0c65e;
+    font-size: 19px;
+    pointer-events: none;
+
+    animation: fish-star-twinkle 550ms ease-out forwards;
+}
+
+@keyframes fish-star-sparkle {
+    0% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(1.35) rotate(-10deg);
+        text-shadow: 0 0 15px rgba(245, 192, 64, 0.9);
+    }
+
+    70% {
+        transform: scale(0.94) rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fish-star-twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-25deg);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1.2) rotate(15deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(9px, -13px) scale(0.5) rotate(45deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fish-rating button,
+    .fish-rating button.star-sparkle,
+    .fish-rating button.star-sparkle::after {
+        animation: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .fish-detail-stars.fish-rating {
+        gap: 3px;
+    }
+
+    .fish-rating button {
+        width: 34px;
+        font-size: 30px;
+    }
+}
