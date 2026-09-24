@@ -551,15 +551,36 @@ if (fishDetailStars) {
 
         renderPersonalStars(currentFishId);
 
-        /* PEQUEÑO DESTELLO AL SELECCIONAR */
+/* ACTUALIZAR EL CATÁLOGO INMEDIATAMENTE */
 
-        button.classList.remove("star-sparkle");
+if (typeof fishData !== "undefined") {
+    renderFish(fishData);
+}
 
-        void button.offsetWidth;
+/* DESTELLO SOLO POR LA ACCIÓN DEL USUARIO */
 
-        button.classList.add("star-sparkle");
+if (newStars > previousStars) {
 
-        updateFishProgress();
+    const selectedButton =
+        fishDetailStars.querySelector(
+            `button[data-stars="${newStars}"]`
+        );
+
+    if (selectedButton) {
+
+        selectedButton.classList.remove("star-sparkle");
+
+        void selectedButton.offsetWidth;
+
+        selectedButton.classList.add("star-sparkle");
+
+        setTimeout(() => {
+            selectedButton.classList.remove("star-sparkle");
+        }, 600);
+    }
+}
+
+updateFishProgress();
     });
 }
 
