@@ -13,6 +13,20 @@ const collectionHomeButton = document.getElementById("collectionHomeButton");
 const openFishCollection = document.getElementById("openFishCollection");
 const backToCollection = document.getElementById("backToCollection");
 
+const fishStarStorageKey = "heartopia-fish-stars";
+
+let personalFishStars = {};
+
+try {
+    personalFishStars = JSON.parse(
+        localStorage.getItem(fishStarStorageKey)
+    ) || {};
+} catch (error) {
+    personalFishStars = {};
+}
+
+let currentFishId = null;
+
 
 /* ========================================
    FUNCIÓN PARA CAMBIAR DE PANTALLA
@@ -197,11 +211,14 @@ function renderFish(fishes) {
                 </strong>
 
                 <div
-                    class="fish-stars"
-                    aria-label="${fish.estrellas} de 5 estrellas"
-                >
-                    ${createFishStars(fish.estrellas)}
-                </div>
+    class="fish-stars"
+    data-fish-stars="${fish.id}"
+    aria-label="Calidad conseguida"
+>
+    ${createFishStars(
+        Number(personalFishStars[fish.id]) || 0
+    )}
+</div>
 
                 <small>
                     ${fish.ubicacion}
@@ -453,21 +470,6 @@ if (backToFishCatalog && fishScreen) {
 /* ========================================
    ESTRELLAS PERSONALES DE PECES
 ======================================== */
-
-const fishStarStorageKey = "heartopia-fish-stars";
-
-let personalFishStars = {};
-
-try {
-    personalFishStars = JSON.parse(
-        localStorage.getItem(fishStarStorageKey)
-    ) || {};
-} catch (error) {
-    personalFishStars = {};
-}
-
-let currentFishId = null;
-
 
 /* MOSTRAR ESTRELLAS DE UN PEZ */
 
