@@ -251,7 +251,9 @@ function updateFishProgress() {
        con los peces que el usuario marque
        como conseguidos.
     */
-    const collectedFish = 0;
+    const collectedFish = fishData.filter((fish) => {
+    return Number(personalFishStars[fish.id]) > 0;
+}).length;
 
     if (fishProgressText) {
         fishProgressText.textContent =
@@ -259,7 +261,6 @@ function updateFishProgress() {
     }
 }
 
-updateFishProgress();
 /* ========================================
    FICHA INDIVIDUAL DE PEZ
 ======================================== */
@@ -320,9 +321,8 @@ function openFishDetail(fish) {
     }
 
     if (fishDetailStars) {
-        fishDetailStars.textContent =
-            createFishStars(fish.estrellas);
-    }
+    renderPersonalStars(fish.id);
+}
 
     if (fishDetailLocation) {
         fishDetailLocation.textContent =
@@ -450,3 +450,116 @@ if (backToFishCatalog && fishScreen) {
         }
     );
 }
+/* ========================================
+   ESTRELLAS PERSONALES DE PECES
+======================================== */
+
+const fishStarStorageKey = "heartopia-fish-stars";
+
+let personalFishStars = {};
+
+try {
+    personalFishStars = JSON.parse(
+        localStorage.getItem(fishStarStorageKey)
+    ) || {};
+} catch (error) {
+    personalFishStars = {};
+}
+
+let currentFishId = null;
+
+
+/* MOSTRAR ESTRELLAS DE UN PEZ */
+
+function renderPersonalStars(fishId) {
+
+    if (!fishDetailStars) return;
+
+    currentFishId = fishId;
+
+    const selectedStars =
+        Number(personalFishStars[fishId]) || 0;
+
+    const buttons =
+        fishDetailStars.querySelectorAll("button[data-stars]");
+
+    buttons.forEach((button) => {
+
+        const starNumber =
+            Number(button.dataset.stars);
+
+        const isSelected =
+            starNumber <= selectedStars;
+
+        button.textContent =
+            isSelected ? "★" : "☆";
+
+        button.classList.toggle(
+            "selected",
+            isSelected
+        );
+
+        button.setAttribute(
+            "aria-pressed",
+            String(starNumber === selectedStars)
+        );
+    });
+}
+
+
+/* GUARDAR UNA NUEVA CALIDAD */
+
+if (fishDetailStars) {
+
+    fishDetailStars.addEventListener("click", (event) => {
+
+        const button =
+            event.target.closest("button[data-stars]");
+
+        if (!button || !currentFishId) return;
+
+        const clickedStars =
+            Number(button.dataset.stars);
+
+        const previousStars =
+            Number(personalFishStars[currentFishId]) || 0;
+
+        const newStars =
+            clickedStars === previousStars
+                ? 0
+                : clickedStars;
+
+        if (newStars === 0) {
+            delete personalFishStars[currentFishId];
+        } else {
+            personalFishStars[currentFishId] = newStars;
+        }
+
+        try {
+            localStorage.setItem(
+                fishStarStorageKey,
+                JSON.stringify(personalFishStars)
+            );
+        } catch (error) {
+            console.warn(
+                "No se pudo guardar el progreso de peces.",
+                error
+            );
+        }
+
+        renderPersonalStars(currentFishId);
+
+        /* PEQUEÑO DESTELLO AL SELECCIONAR */
+
+        button.classList.remove("star-sparkle");
+
+        void button.offsetWidth;
+
+        button.classList.add("star-sparkle");
+
+        updateFishProgress();
+    });
+}
+
+/* ACTUALIZAR PROGRESO AL CARGAR LA APP */
+updateFishProgress();
