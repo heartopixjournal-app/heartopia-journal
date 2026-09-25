@@ -243,6 +243,222 @@ const fishData = [
         },
         anecdota: "Pequeño, ágil y valiente; vive junto a las medusas sin miedo.",
         imagen: ""
+    },
+
+    {
+        id: "pez-payaso",
+        nombre: "Pez payaso",
+        categoria: "pesca",
+        ubicacion: "Mar antiguo",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.02–0.03 kg",
+            2: "0.03–0.04 kg",
+            3: "0.04–0.05 kg",
+            4: "0.05–0.06 kg",
+            5: "0.06–0.07 kg"
+        },
+        anecdota: "Energética y adorable, se volvió una superestrella del mundo marino gracias a cierta famosa película oceánica.",
+        imagen: ""
+    },
+
+    {
+        id: "rodaballo",
+        nombre: "Rodaballo",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.30 kg"
+        },
+        anecdota: "Un tipo de pez plano, no muy agraciado, pero amable.",
+        imagen: ""
+    },
+
+    {
+        id: "platija-europea",
+        nombre: "Platija europea",
+        categoria: "pesca",
+        ubicacion: "Mar antiguo",
+        actividad: "Diaria",
+        horario: {
+            inicio: 19,
+            fin: 7,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.30 kg"
+        },
+        anecdota: "Como pez nocturno, su vista apenas le alcanza para buscar comida.",
+        imagen: ""
+    },
+
+    {
+        id: "caballa",
+        nombre: "Caballa",
+        categoria: "pesca",
+        ubicacion: "Mar de ballena",
+        actividad: "Diaria",
+        horario: {
+            inicio: 13,
+            fin: 1,
+            todoElDia: false
+        },
+        clima: ["soleado", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "0.02–0.03 kg",
+            2: "0.03–0.04 kg",
+            3: "0.04–0.05 kg",
+            4: "0.05–0.06 kg",
+            5: "0.06–0.07 kg"
+        },
+        anecdota: "Un poco torpe, pero hermoso y único. Eso sí, le encanta dormir.",
+        imagen: ""
+    },
+
+    {
+        id: "langosta-europea",
+        nombre: "Langosta europea",
+        categoria: "pesca",
+        ubicacion: "Mar susurrante",
+        actividad: "Diaria",
+        horario: {
+            inicio: 19,
+            fin: 1,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "2–2.6 kg",
+            2: "2.6–3.2 kg",
+            3: "3.2–3.8 kg",
+            4: "3.8–4.4 kg",
+            5: "4.4–5 kg"
+        },
+        anecdota: "Gigante con garras de hierro. ¡Qué aspecto tan feroz!",
+        imagen: ""
+    },
+
+    {
+        id: "pez-globo-rio",
+        nombre: "Pez globo de río",
+        categoria: "pesca",
+        ubicacion: "Mar antiguo",
+        actividad: "Diaria",
+        horario: {
+            inicio: 13,
+            fin: 1,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Un pez que viaja entre ríos y mares, aunque su hogar habitual es el océano.",
+        imagen: ""
+    },
+
+    {
+        id: "tiburon-gato",
+        nombre: "Tiburón gato",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "80–94 kg",
+            2: "94–108 kg",
+            3: "108–122 kg",
+            4: "122–136 kg",
+            5: "136–150 kg"
+        },
+        anecdota: "Sus ojos brillan bajo la luz de la luna, como los de un gatito.",
+        imagen: ""
+    },
+
+    {
+        id: "pez-remo-gigante",
+        nombre: "Pez remo gigante",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diaria",
+        horario: {
+            inicio: 7,
+            fin: 19,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "100–120 kg",
+            2: "120–140 kg",
+            3: "140–160 kg",
+            4: "160–180 kg",
+            5: "180–200 kg"
+        },
+        anecdota: "Algunos lo llaman mensajero del palacio dragón; otros, demonio del fondo. Aún se sabe muy poco sobre él.",
+        imagen: ""
+    },
+
+    {
+        id: "besugo-negro",
+        nombre: "Besugo negro",
+        categoria: "pesca",
+        ubicacion: "Mar susurrante",
+        actividad: "Diaria",
+        horario: {
+            inicio: 19,
+            fin: 7,
+            todoElDia: false
+        },
+        clima: ["lluvia", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Tranquilo, incluso en la oscuridad más profunda.",
+        imagen: ""
     }
 
 ];
