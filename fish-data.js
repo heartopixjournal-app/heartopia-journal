@@ -923,6 +923,243 @@ const fishData = [
         },
         anecdota: "¿Quién dijo que alquilar una casa cuesta dinero? El cangrejo ermitaño, experto en mudanzas, opina lo contrario.",
         imagen: ""
+    },
+       {
+        id: "coregono-blanco",
+        nombre: "Coregono blanco",
+        categoria: "pesca",
+        ubicacion: "Lago del Monte termal",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "1-1.4kg",
+            2: "1.4-1.8kg",
+            3: "1.8-2.2kg",
+            4: "2.2-2.6kg",
+            5: "2.6-3kg"
+        },
+        anecdota: "De cuerpo delgado. Una vez que encuentra su hogar ideal, no se muda a la ligera.",
+        imagen: ""
+    },
+
+    {
+        id: "carpa-cruciana",
+        nombre: "Carpa cruciana",
+        categoria: "pesca",
+        ubicacion: "Lago suburbano",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "2-2.6kg",
+            2: "2.6-3.2kg",
+            3: "3.2-3.8kg",
+            4: "3.8-4.4kg",
+            5: "4.4-5kg"
+        },
+        anecdota: "Cuenta la historia que los carpines nacen dorados, y se oscurecen con el tiempo.",
+        imagen: ""
+    },
+
+    {
+        id: "alburno-comun",
+        nombre: "Alburno común",
+        categoria: "pesca",
+        ubicacion: "Lago",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "0.02-0.03kg",
+            2: "0.03-0.04kg",
+            3: "0.04-0.05kg",
+            4: "0.05-0.06kg",
+            5: "0.06-0.07kg"
+        },
+        anecdota: "¿Molesto? ¿O solo haciendo puchero?",
+        imagen: ""
+    },
+
+    {
+        id: "alburno-binaculado",
+        nombre: "Alburno binaculado",
+        categoria: "pesca",
+        ubicacion: "Por confirmar",
+        actividad: "Por confirmar",
+        horario: null,
+        clima: [],
+        estrellas: 2,
+        pesos: {
+            1: "0.02-0.03kg",
+            2: "0.03-0.04kg",
+            3: "0.04-0.05kg",
+            4: "0.05-0.06kg",
+            5: "0.06-0.07kg"
+        },
+        anecdota: "Es bello y tranquilo. No busca su comida, espera a que llegue sola.",
+        imagen: ""
+    },
+
+    {
+        id: "locha-china",
+        nombre: "Locha china",
+        categoria: "pesca",
+        ubicacion: "Lago suburbano",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.05-0.07kg",
+            2: "0.07-0.09kg",
+            3: "0.09-0.11kg",
+            4: "0.11-0.13kg",
+            5: "0.13-0.15kg"
+        },
+        anecdota: "De cuerpo liso y ágil, se mueve entre las grietas rocosas con total libertad. Ante el susto, se pega a la pared antes de reaccionar.",
+        imagen: ""
+    },
+
+    {
+        id: "pez-luna-de-lodo",
+        nombre: "Pez luna de lodo",
+        categoria: "pesca",
+        ubicacion: "Lago del bosque",
+        actividad: "Diarias",
+        horario: {
+            inicio: 7,
+            fin: 1,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "0.05-0.07kg",
+            2: "0.07-0.09kg",
+            3: "0.09-0.11kg",
+            4: "0.11-0.13kg",
+            5: "0.13-0.15kg"
+        },
+        anecdota: "Un pececillo color barro, escondido entre el barro... ¡Qué trabalenguas!",
+        imagen: ""
+    },
+
+    {
+        id: "eperlano",
+        nombre: "Eperlano",
+        categoria: "pesca",
+        ubicacion: "Lago de la pradera",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.05-0.07kg",
+            2: "0.07-0.09kg",
+            3: "0.09-0.11kg",
+            4: "0.11-0.13kg",
+            5: "0.13-0.15kg"
+        },
+        anecdota: "También llamado «pez capelín», huele ligeramente a pepino fresco.",
+        imagen: ""
+    },
+
+    {
+        id: "perca-ruffe",
+        nombre: "Perca ruffe",
+        categoria: "pesca",
+        ubicacion: "Lago del Monte termal",
+        actividad: "Diarias",
+        horario: {
+            inicio: 13,
+            fin: 1,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "0.02-0.03kg",
+            2: "0.03-0.04kg",
+            3: "0.04-0.05kg",
+            4: "0.05-0.06kg",
+            5: "0.06-0.07kg"
+        },
+        anecdota: "Pez carnívoro que vive en lagos cálidos.",
+        imagen: ""
+    },
+
+    {
+        id: "eglefino",
+        nombre: "Eglefino",
+        categoria: "pesca",
+        ubicacion: "Mar oriental",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: false,
+            tramos: [
+                { inicio: 1, fin: 7 },
+                { inicio: 13, fin: 1 }
+            ]
+        },
+        clima: ["soleado", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "1-1.4kg",
+            2: "1.4-1.8kg",
+            3: "1.8-2.2kg",
+            4: "2.2-2.6kg",
+            5: "2.6-3kg"
+        },
+        anecdota: "Prefiere permanecer inmóvil en el fondo marino poco profundo. Pero cuando tiene hambre, se mueve por todas partes en busca de comida.",
+        imagen: ""
+    },
+
+    {
+        id: "timalo",
+        nombre: "Tímalo",
+        categoria: "pesca",
+        ubicacion: "Lago suburbano",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "1-1.4kg",
+            2: "1.4-1.8kg",
+            3: "1.8-2.2kg",
+            4: "2.2-2.6kg",
+            5: "2.6-3kg"
+        },
+        anecdota: "Sus escamas reflejan un violeta de ensueño. ¡Qué lindo!",
+        imagen: ""
     }
 
 ];
