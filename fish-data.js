@@ -996,14 +996,18 @@ const fishData = [
         imagen: ""
     },
 
-    {
+     {
         id: "alburno-binaculado",
         nombre: "Alburno binaculado",
         categoria: "pesca",
-        ubicacion: "Por confirmar",
-        actividad: "Por confirmar",
-        horario: null,
-        clima: [],
+        ubicacion: "Lago suburbano",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
         pesos: {
             1: "0.02-0.03kg",
@@ -1015,7 +1019,6 @@ const fishData = [
         anecdota: "Es bello y tranquilo. No busca su comida, espera a que llegue sola.",
         imagen: ""
     },
-
     {
         id: "locha-china",
         nombre: "Locha china",
