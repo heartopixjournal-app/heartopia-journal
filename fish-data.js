@@ -532,19 +532,18 @@ const fishData = [
         imagen: ""
     },
 
-    {
+        {
         id: "barbo",
         nombre: "Barbo",
         categoria: "pesca",
-        ubicacion: "Por confirmar",
-        actividad: "Por confirmar",
+        ubicacion: "Río de aguas bajas",
+        actividad: "Diaria",
         horario: {
-            inicio: null,
-            fin: null,
-            todoElDia: false,
-            pendiente: true
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
         },
-        clima: [],
+        clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
         pesos: {
             1: "1–1.4 kg",
@@ -556,7 +555,7 @@ const fishData = [
         anecdota: "Es un barbo, no un bobo... ¡ni un pez gordo!",
         imagen: ""
     },
-
+   
     {
         id: "perca-dorada-manchada",
         nombre: "Perca dorada manchada",
@@ -653,19 +652,18 @@ const fishData = [
         imagen: ""
     },
 
-    {
+       {
         id: "rana-europea",
         nombre: "Rana europea",
         categoria: "pesca",
-        ubicacion: "Por confirmar",
-        actividad: "Por confirmar",
+        ubicacion: "Lago",
+        actividad: "Diaria",
         horario: {
-            inicio: null,
-            fin: null,
-            todoElDia: false,
-            pendiente: true
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
         },
-        clima: [],
+        clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
         pesos: {
             1: "1–1.4 kg",
@@ -677,7 +675,7 @@ const fishData = [
         anecdota: "Heredera de la rana de estanque y la de pantano, se distribuye ampliamente en todo tipo de lagos.",
         imagen: ""
     },
-
+   
     {
         id: "tenca",
         nombre: "Tenca",
