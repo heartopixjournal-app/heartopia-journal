@@ -459,6 +459,247 @@ const fishData = [
         },
         anecdota: "Tranquilo, incluso en la oscuridad más profunda.",
         imagen: ""
+    },
+       {
+        id: "perca-rio",
+        nombre: "Perca de río",
+        categoria: "pesca",
+        ubicacion: "Río",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "2–2.6 kg",
+            2: "2.6–3.2 kg",
+            3: "3.2–3.8 kg",
+            4: "3.8–4.4 kg",
+            5: "4.4–5 kg"
+        },
+        anecdota: "Vive en aguas dulces. Tan común como sabrosa, seguro la has probado.",
+        imagen: ""
+    },
+
+    {
+        id: "cacho-europeo",
+        nombre: "Cacho europeo",
+        categoria: "pesca",
+        ubicacion: "Lago",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 5,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Amante de los lagos tranquilos. Debe de tener un carácter apacible.",
+        imagen: ""
+    },
+
+    {
+        id: "sardina",
+        nombre: "Sardina",
+        categoria: "pesca",
+        ubicacion: "Mar",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.3 kg"
+        },
+        anecdota: "Pececillo blanco azulado, fácil de encontrar en el mar.",
+        imagen: ""
+    },
+
+    {
+        id: "barbo",
+        nombre: "Barbo",
+        categoria: "pesca",
+        ubicacion: "Por confirmar",
+        actividad: "Por confirmar",
+        horario: {
+            inicio: null,
+            fin: null,
+            todoElDia: false,
+            pendiente: true
+        },
+        clima: [],
+        estrellas: 1,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Es un barbo, no un bobo... ¡ni un pez gordo!",
+        imagen: ""
+    },
+
+    {
+        id: "perca-dorada-manchada",
+        nombre: "Perca dorada manchada",
+        categoria: "pesca",
+        ubicacion: "Río del crepúsculo",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "1–1.2 kg",
+            2: "1.2–1.4 kg",
+            3: "1.4–1.6 kg",
+            4: "1.6–1.8 kg",
+            5: "1.8–2 kg"
+        },
+        anecdota: "Una perca especial con grandes manchas de color verde oscuro en el cuerpo.",
+        imagen: ""
+    },
+
+    {
+        id: "pez-minnow",
+        nombre: "Pez minnow",
+        categoria: "pesca",
+        ubicacion: "Río sereno",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.05–0.07 kg",
+            2: "0.07–0.09 kg",
+            3: "0.09–0.11 kg",
+            4: "0.11–0.13 kg",
+            5: "0.13–0.15 kg"
+        },
+        anecdota: "Tiene un cuerpo delgado y escamas finas.",
+        imagen: ""
+    },
+
+    {
+        id: "camaron-azul",
+        nombre: "Camarón azul",
+        categoria: "pesca",
+        ubicacion: "Río",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.3 kg"
+        },
+        anecdota: "Se encuentra en muchos ríos. Se esconde entre algas para evitar el sol.",
+        imagen: ""
+    },
+
+    {
+        id: "blenido-rio",
+        nombre: "Blénido de río",
+        categoria: "pesca",
+        ubicacion: "Río del crepúsculo",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 1,
+        pesos: {
+            1: "0.05–0.07 kg",
+            2: "0.07–0.09 kg",
+            3: "0.09–0.11 kg",
+            4: "0.11–0.13 kg",
+            5: "0.13–0.15 kg"
+        },
+        anecdota: "Lleva dos florecitas danzantes en la cabeza.",
+        imagen: ""
+    },
+
+    {
+        id: "rana-europea",
+        nombre: "Rana europea",
+        categoria: "pesca",
+        ubicacion: "Por confirmar",
+        actividad: "Por confirmar",
+        horario: {
+            inicio: null,
+            fin: null,
+            todoElDia: false,
+            pendiente: true
+        },
+        clima: [],
+        estrellas: 3,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Heredera de la rana de estanque y la de pantano, se distribuye ampliamente en todo tipo de lagos.",
+        imagen: ""
+    },
+
+    {
+        id: "tenca",
+        nombre: "Tenca",
+        categoria: "pesca",
+        ubicacion: "Lago del bosque",
+        actividad: "Diaria",
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.05–0.07 kg",
+            2: "0.07–0.09 kg",
+            3: "0.09–0.11 kg",
+            4: "0.11–0.13 kg",
+            5: "0.13–0.15 kg"
+        },
+        anecdota: "De cuerpo resbaloso. Se dice que las tencas enfermas se frotan entre sí para curarse, por eso las llaman «pez doctor».",
+        imagen: ""
     }
 
 ];
