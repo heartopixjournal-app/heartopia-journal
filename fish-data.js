@@ -698,6 +698,231 @@ const fishData = [
         },
         anecdota: "De cuerpo resbaloso. Se dice que las tencas enfermas se frotan entre sí para curarse, por eso las llaman «pez doctor».",
         imagen: ""
+    },
+       {
+        id: "quimera-del-atlantico",
+        nombre: "Quimera del Atlántico",
+        categoria: "pesca",
+        ubicacion: "Mar",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "2–2.6 kg",
+            2: "2.6–3.2 kg",
+            3: "3.2–3.8 kg",
+            4: "3.8–4.4 kg",
+            5: "4.4–5 kg"
+        },
+        anecdota: "Mariposa del mar... con una colita y aguijones ocultos.",
+        imagen: ""
+    },
+
+    {
+        id: "espinoso-de-mar",
+        nombre: "Espinoso de mar",
+        categoria: "pesca",
+        ubicacion: "Mar antiguo",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.3 kg"
+        },
+        anecdota: "Aunque pequeño, es un gran cazador de pececitos y plancton.",
+        imagen: ""
+    },
+
+    {
+        id: "salmonete-listado",
+        nombre: "Salmonete listado",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "5–8 kg",
+            2: "8–11 kg",
+            3: "11–14 kg",
+            4: "14–17 kg",
+            5: "17–20 kg"
+        },
+        anecdota: "Tiene bigotes largos como una cabra: una apariencia muy sabia.",
+        imagen: ""
+    },
+
+    {
+        id: "jurel-real",
+        nombre: "Jurel real",
+        categoria: "pesca",
+        ubicacion: "Mar susurrante",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "También llamado «falso jurel», porque se parece al jurel japonés pero no están emparentados.",
+        imagen: ""
+    },
+
+    {
+        id: "caballito-de-mar",
+        nombre: "Caballito de mar",
+        categoria: "pesca",
+        ubicacion: "Mar de ballena",
+        actividad: "Diarias",
+        horario: {
+            inicio: 1,
+            fin: 19,
+            todoElDia: false
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.3 kg"
+        },
+        anecdota: "Extraño, hermoso, y de movimientos lentos.",
+        imagen: ""
+    },
+
+    {
+        id: "pez-rape",
+        nombre: "Pez rape",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "2–2.6 kg",
+            2: "2.6–3.2 kg",
+            3: "3.2–3.8 kg",
+            4: "3.8–4.4 kg",
+            5: "4.4–5 kg"
+        },
+        anecdota: "Lleva un farol que atrae la cena.",
+        imagen: ""
+    },
+
+    {
+        id: "pulpo-comun",
+        nombre: "Pulpo común",
+        categoria: "pesca",
+        ubicacion: "Pesca marina",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "0.15–0.18 kg",
+            2: "0.18–0.21 kg",
+            3: "0.21–0.24 kg",
+            4: "0.24–0.27 kg",
+            5: "0.27–0.3 kg"
+        },
+        anecdota: "Un pulpo mediano, persigue la luz en la oscuridad.",
+        imagen: ""
+    },
+
+    {
+        id: "salmon-del-atlantico",
+        nombre: "Salmón del Atlántico",
+        categoria: "pesca",
+        ubicacion: "Mar de ballena",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: false,
+            tramos: [
+                { inicio: 1, fin: 7 },
+                { inicio: 13, fin: 1 }
+            ]
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 2,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "Uno de los miembros más comunes de la familia del salmón. Su carne anaranjada es rica en vitaminas, deliciosa cruda o cocida.",
+        imagen: ""
+    },
+
+    {
+        id: "pulpo-pigmeo-del-atlantico",
+        nombre: "Pulpo pigmeo del Atlántico",
+        categoria: "pesca",
+        ubicacion: "Mar susurrante",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 4,
+        pesos: {
+            1: "2–2.6 kg",
+            2: "2.6–3.2 kg",
+            3: "3.2–3.8 kg",
+            4: "3.8–4.4 kg",
+            5: "4.4–5 kg"
+        },
+        anecdota: "Mini... pero con dignidad.",
+        imagen: ""
+    },
+
+    {
+        id: "cangrejo-ermitano",
+        nombre: "Cangrejo ermitaño",
+        categoria: "pesca",
+        ubicacion: "Mar oriental",
+        actividad: "Diarias",
+        horario: {
+            todoElDia: true
+        },
+        clima: ["soleado", "lluvia", "arcoiris"],
+        estrellas: 3,
+        pesos: {
+            1: "1–1.4 kg",
+            2: "1.4–1.8 kg",
+            3: "1.8–2.2 kg",
+            4: "2.2–2.6 kg",
+            5: "2.6–3 kg"
+        },
+        anecdota: "¿Quién dijo que alquilar una casa cuesta dinero? El cangrejo ermitaño, experto en mudanzas, opina lo contrario.",
+        imagen: ""
     }
 
 ];
