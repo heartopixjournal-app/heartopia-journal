@@ -5,10 +5,15 @@
 
 const fishData = [
 
-    {
+        {
         id: "mejillon",
         nombre: "Mejillón",
         categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
         ubicacion: "Lago suburbano",
         actividad: "Diaria",
         horario: {
@@ -18,6 +23,7 @@ const fishData = [
         },
         clima: ["lluvia", "arcoiris"],
         estrellas: 2,
+
         pesos: {
             1: "0.15–0.18 kg",
             2: "0.18–0.21 kg",
@@ -25,6 +31,17 @@ const fishData = [
             4: "0.24–0.27 kg",
             5: "0.27–0.30 kg"
         },
+
+        valorVenta: {
+            1: 100,
+            2: 150,
+            3: 200,
+            4: 400,
+            5: 800
+        },
+
+        recetas: [],
+
         anecdota: "Caracola de tonos verdes y amarillo, con carne llena de nutrientes.",
         imagen: ""
     },
@@ -33,6 +50,11 @@ const fishData = [
         id: "cigala-noruega",
         nombre: "Cigala noruega",
         categoria: "pesca",
+
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
         ubicacion: "Lago del bosque",
         actividad: "Diaria",
         horario: {
@@ -42,6 +64,7 @@ const fishData = [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
+
         pesos: {
             1: "0.15–0.18 kg",
             2: "0.18–0.21 kg",
@@ -49,6 +72,21 @@ const fishData = [
             4: "0.24–0.27 kg",
             5: "0.27–0.30 kg"
         },
+
+        valorVenta: {
+            1: 100,
+            2: 150,
+            3: 200,
+            4: 400,
+            5: 800
+        },
+
+        recetas: [
+            "Mariscos Variados Lujosos",
+            "Copa de camarón con aguacate",
+            "Pinzas fritas con camarón y queso"
+        ],
+
         anecdota: "Con su dura coraza y las dos grandes pinzas, nunca da un paso atrás ante ningún peligro.",
         imagen: ""
     },
@@ -57,6 +95,11 @@ const fishData = [
         id: "lobina-florida",
         nombre: "Lobina de Florida",
         categoria: "pesca",
+
+        nivelPesca: 2,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+
         ubicacion: "Lago del bosque",
         actividad: "Diaria",
         horario: {
@@ -66,6 +109,7 @@ const fishData = [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
+
         pesos: {
             1: "1–1.4 kg",
             2: "1.4–1.8 kg",
@@ -73,10 +117,20 @@ const fishData = [
             4: "2.2–2.6 kg",
             5: "2.6–3 kg"
         },
+
+        valorVenta: {
+            1: 230,
+            2: 345,
+            3: 460,
+            4: 920,
+            5: 1840
+        },
+
+        recetas: [],
+
         anecdota: "Un pez carnívoro famoso por su ferocidad. Suele acechar entre la vegetación acuática, y ataca en cuanto pasa una presa.",
         imagen: ""
     },
-
     {
         id: "cangrejo-arroyo",
         nombre: "Cangrejo de arroyo",
