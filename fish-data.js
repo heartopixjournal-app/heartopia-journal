@@ -1166,3 +1166,428 @@ const fishData = [
     }
 
 ];
+
+/* ========================================
+   DATOS COMPLEMENTARIOS — HEARTODEX
+   Nivel, sombra, valor de mercado y categoría
+======================================== */
+
+const fishExtraData = {
+   fishData.forEach((fish) => {
+    const extra = fishExtraData[fish.id];
+
+    if (extra) {
+        Object.assign(fish, extra);
+    }
+});
+
+    "mejillon": {
+        nivelPesca: 4,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "cigala-noruega": {
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: [
+            "Mariscos Variados Lujosos",
+            "Plato frío de cigalas",
+            "Copa de camarón con aguacate",
+            "Pinzas fritas con camarón y queso"
+        ]
+    },
+
+    "lobina-florida": {
+        nivelPesca: 2,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    },
+
+    "cangrejo-arroyo": {
+        nivelPesca: 4,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "cigala-azul-nordica": {
+        nivelPesca: 8,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [250, 375, 500, 1000, 2000],
+        recetas: [
+            "Plato frío de cigalas azules",
+            "Copa de camarón con aguacate",
+            "Pinzas fritas con camarón y queso"
+        ]
+    },
+
+    "lubina-marina": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [75, 112, 150, 300, 600],
+        recetas: ["Mariscos Variados Lujosos"]
+    },
+
+    "listado": {
+        nivelPesca: 1,
+        sombra: "Grande",
+        categoriaHeartodex: "Común",
+        valorVenta: [210, 315, 420, 840, 1680],
+        recetas: []
+    },
+
+    "pez-sable": {
+        nivelPesca: 1,
+        sombra: "Grande",
+        categoriaHeartodex: "Común",
+        valorVenta: [105, 157, 210, 420, 840],
+        recetas: []
+    },
+
+    "camaron-marino": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: [
+            "Arroz frito con camarones y espárragos de mar",
+            "Sopa cremosa de tomate y mariscos",
+            "Sushi de camarón frito recomendado por Bancho"
+        ]
+    },
+
+    "jurel-japones": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "pez-payaso": {
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "rodaballo": {
+        nivelPesca: 2,
+        sombra: "Mediano",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "platija-europea": {
+        nivelPesca: 4,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    },
+
+    "caballa": {
+        nivelPesca: 5,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [150, 225, 300, 600, 1200],
+        recetas: []
+    },
+
+    "langosta-europea": {
+        nivelPesca: 5,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: [
+            "Copa de camarón con aguacate",
+            "Pinzas fritas con camarón y queso"
+        ]
+    },
+
+    "pez-globo-rio": {
+        nivelPesca: 6,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    },
+
+    "tiburon-gato": {
+        nivelPesca: 6,
+        sombra: "Grande",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [535, 802, 1070, 2140, 4280],
+        recetas: []
+    },
+
+    "pez-remo-gigante": {
+        nivelPesca: 7,
+        sombra: "Dorado",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [535, 802.5, 1070, 2140, 4280],
+        recetas: []
+    },
+
+    "besugo-negro": {
+        nivelPesca: 7,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    },
+
+    "perca-rio": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [75, 112, 150, 300, 600],
+        recetas: []
+    },
+
+    "cacho-europeo": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [75, 112, 150, 300, 600],
+        recetas: []
+    },
+
+    "sardina": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "barbo": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [75, 112, 150, 300, 600],
+        recetas: []
+    },
+
+    "perca-dorada-manchada": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "pez-minnow": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "camaron-azul": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: [
+            "Sushi de camarón frito recomendado por Bancho"
+        ]
+    },
+
+    "blenido-rio": {
+        nivelPesca: 5,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [150, 225, 300, 600, 1200],
+        recetas: []
+    },
+
+    "rana-europea": {
+        nivelPesca: 3,
+        sombra: "Azul",
+        categoriaHeartodex: "Cola de Sirena",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "tenca": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "quimera-del-atlantico": {
+        nivelPesca: 4,
+        sombra: "Azul",
+        categoriaHeartodex: "Cola de Sirena",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "espinoso-de-mar": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "salmonete-listado": {
+        nivelPesca: 1,
+        sombra: "Dorado",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "jurel-real": {
+        nivelPesca: 2,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [155, 232.5, 310, 620, 1240],
+        recetas: []
+    },
+
+    "caballito-de-mar": {
+        nivelPesca: 2,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "pez-rape": {
+        nivelPesca: 2,
+        sombra: "Dorado",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "pulpo-comun": {
+        nivelPesca: 2,
+        sombra: "Mediano",
+        categoriaHeartodex: "Pesca marina",
+        valorVenta: [320, 480, 640, 1280, 2560],
+        recetas: []
+    },
+
+    "salmon-del-atlantico": {
+        nivelPesca: 3,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [155, 232, 310, 620, 1240],
+        recetas: []
+    },
+
+    "pulpo-pigmeo-del-atlantico": {
+        nivelPesca: 2,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [150, 225, 300, 600, 1200],
+        recetas: []
+    },
+
+    "cangrejo-ermitano": {
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "coregono-blanco": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [105, 157, 210, 420, 840],
+        recetas: []
+    },
+
+    "carpa-cruciana": {
+        nivelPesca: 1,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [75, 112, 150, 300, 600],
+        recetas: []
+    },
+
+    "alburno-comun": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "alburno-binaculado": {
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [50, 75, 100, 200, 400],
+        recetas: []
+    },
+
+    "locha-china": {
+        nivelPesca: 2,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "pez-luna-de-lodo": {
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "eperlano": {
+        nivelPesca: 2,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "perca-ruffe": {
+        nivelPesca: 3,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+        valorVenta: [100, 150, 200, 400, 800],
+        recetas: []
+    },
+
+    "eglefino": {
+        nivelPesca: 8,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    },
+
+    "timalo": {
+        nivelPesca: 6,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+        valorVenta: [230, 345, 460, 920, 1840],
+        recetas: []
+    }
+};
