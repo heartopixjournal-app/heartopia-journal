@@ -1590,4 +1590,4 @@ const fishExtraData = {
         valorVenta: [230, 345, 460, 920, 1840],
         recetas: []
     }
-};
+}
