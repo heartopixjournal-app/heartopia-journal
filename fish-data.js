@@ -1455,6 +1455,495 @@ recetas: [],
         },
         anecdota: "Sus escamas reflejan un violeta de ensueño. ¡Qué lindo!",
         imagen: ""
+    },
+       {
+        id: "locha-moteada",
+        nombre: "Locha moteada",
+        categoria: "pesca",
+
+        nivelPesca: 1,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Rio del gran tronco",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 50,
+            2: 75,
+            3: 100,
+            4: 200,
+            5: 400
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 200,
+            experto: 600,
+            maestro: 1200
+        },
+
+        anecdota: "Ligero, asustadizo... y muy escurridizo. ¡Que no se te escape!",
+        imagen: ""
+    },
+
+    {
+        id: "lucioperca",
+        nombre: "Lucioperca",
+        categoria: "pesca",
+
+        nivelPesca: 3,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Rio del gran tronco",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "soleado"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 230,
+            2: 345,
+            3: 460,
+            4: 920,
+            5: 1840
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Le encanta la carne, por eso engorda con facilidad.",
+        imagen: ""
+    },
+
+    {
+        id: "tilapia",
+        nombre: "Tilapia",
+        categoria: "pesca",
+
+        nivelPesca: 3,
+        sombra: "Azul",
+        categoriaHeartodex: "Cola de Sirena",
+
+        ubicacion: "Río",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 320,
+            2: 480,
+            3: 640,
+            4: 1280,
+            5: 2560
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Es tan sabroso que lo llaman «el salmón blanco».",
+        imagen: ""
+    },
+
+    {
+        id: "carpa-europea",
+        nombre: "Carpa Europea",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Rio de crepusculo",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 13,
+            fin: 1,
+            todoElDia: false
+        },
+
+        clima: ["arcoiris", "soleado"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 230,
+            2: 345,
+            3: 460,
+            4: 920,
+            5: 1840
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Un pez lleno de energía con una enorme fuerza. Al morder el anzuelo, salta intentando escapar. ¡Ten cuidado o la perderás!",
+        imagen: ""
+    },
+
+    {
+        id: "carpa-mariposa",
+        nombre: "Carpa mariposa",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Grande",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Lago de la pradera",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 320,
+            2: 480,
+            3: 640,
+            4: 1280,
+            5: 2560
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "El «hada del agua», elegante y pura, es muy sensible y necesita cuidados delicados.",
+        imagen: ""
+    },
+
+    {
+        id: "lota",
+        nombre: "Lota",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Grande",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Río Sereno",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 13,
+            fin: 1,
+            todoElDia: false
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 230,
+            2: 345,
+            3: 460,
+            4: 920,
+            5: 1840
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Detecta olores con su \"bigote\" corto y curioso.",
+        imagen: ""
+    },
+
+    {
+        id: "pez-gobio",
+        nombre: "Pez Gobio",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Mar oriental",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 7,
+            fin: 19,
+            todoElDia: false
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 150,
+            2: 225,
+            3: 300,
+            4: 600,
+            5: 1200
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Con sus aletas pectorales, se adhiere a las rocas con facilidad y no se deja arrastrar por la corriente.",
+        imagen: ""
+    },
+
+    {
+        id: "pirana-vientre-rojo",
+        nombre: "Piraña de vientre rojo",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Mediano",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Rio del gran tronco",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 230,
+            2: 345,
+            3: 460,
+            4: 920,
+            5: 1840
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Su vientre rojo es natural, no es que se haya quemado.",
+        imagen: ""
+    },
+
+    {
+        id: "renacuajo",
+        nombre: "Renacuajo",
+        categoria: "pesca",
+
+        nivelPesca: 4,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Lago del monte termal",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 100,
+            2: 150,
+            3: 200,
+            4: 400,
+            5: 800
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 150,
+            experto: 450,
+            maestro: 900
+        },
+
+        anecdota: "Pequeño ahora, rana en verano. Salvo que...alguien lo pesque antes.",
+        imagen: ""
+    },
+
+    {
+        id: "rutilo",
+        nombre: "Rutilo",
+        categoria: "pesca",
+
+        nivelPesca: 5,
+        sombra: "Pequeño",
+        categoriaHeartodex: "Común",
+
+        ubicacion: "Lago Suburbano",
+        actividad: "Diarias",
+
+        horario: {
+            inicio: 1,
+            fin: 1,
+            todoElDia: true
+        },
+
+        clima: ["arcoiris", "soleado", "lluvia"],
+        estrellas: 0,
+
+        pesos: {
+            1: "Pendiente",
+            2: "Pendiente",
+            3: "Pendiente",
+            4: "Pendiente",
+            5: "Pendiente"
+        },
+
+        valorVenta: {
+            1: 150,
+            2: 225,
+            3: 300,
+            4: 600,
+            5: 1200
+        },
+
+        recetas: [],
+
+        maestria: {
+            novato: 100,
+            experto: 300,
+            maestro: 600
+        },
+
+        anecdota: "Ojos rojos... ¿alguien lo hizo llorar?",
+        imagen: ""
     }
 
 ];
