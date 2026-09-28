@@ -1466,7 +1466,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Rio del gran tronco",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1515,7 +1515,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Rio del gran tronco",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1564,7 +1564,7 @@ recetas: [],
         categoriaHeartodex: "Cola de Sirena",
 
         ubicacion: "Río",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1613,7 +1613,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Rio de crepusculo",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 13,
@@ -1662,7 +1662,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Lago de la pradera",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1711,7 +1711,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Río Sereno",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 13,
@@ -1760,7 +1760,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Mar oriental",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 7,
@@ -1809,7 +1809,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Rio del gran tronco",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1858,7 +1858,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Lago del monte termal",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
@@ -1907,7 +1907,7 @@ recetas: [],
         categoriaHeartodex: "Común",
 
         ubicacion: "Lago Suburbano",
-        actividad: "Diarias",
+        actividad: "Diaria",
 
         horario: {
             inicio: 1,
