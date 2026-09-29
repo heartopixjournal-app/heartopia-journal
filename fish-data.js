@@ -24,14 +24,6 @@ const fishData = [
         clima: ["lluvia", "arcoiris"],
         estrellas: 2,
 
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
-
         valorVenta: {
             1: 100,
             2: 150,
@@ -65,13 +57,7 @@ const fishData = [
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
 
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
+        
 
         valorVenta: {
             1: 100,
@@ -110,14 +96,6 @@ const fishData = [
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
 
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
-
         valorVenta: {
             1: 230,
             2: 345,
@@ -149,13 +127,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Come carne con pinzas, delicadamente, pedacito a pedacito.",
         imagen: ""
     },
@@ -182,13 +154,7 @@ recetas: [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
+        
         anecdota: "Azul por fuera, pero siempre será un cangrejo de agua dulce.",
         imagen: ""
     },
@@ -206,13 +172,7 @@ recetas: [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Del mar cercano, de carne tierna y sabrosa.",
         imagen: ""
     },
@@ -235,13 +195,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "80–94 kg",
-            2: "94–108 kg",
-            3: "108–122 kg",
-            4: "122–136 kg",
-            5: "136–150 kg"
-        },
+        
         anecdota: "Las pequeñas protuberancias detrás de la aleta dorsal son su «truco secreto» para nadar como un rayo.",
         imagen: ""
     },
@@ -264,13 +218,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Larga y blanca, como una cinta flotando en el mar.",
         imagen: ""
     },
@@ -297,13 +245,7 @@ recetas: [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
+        
         anecdota: "Aunque viven en el mar, los camarones son habituales en mesas de todo el mundo.",
         imagen: ""
     },
@@ -326,13 +268,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "0.02–0.03 kg",
-            2: "0.03–0.04 kg",
-            3: "0.04–0.05 kg",
-            4: "0.05–0.06 kg",
-            5: "0.06–0.07 kg"
-        },
+        
         anecdota: "Pequeño, ágil y valiente; vive junto a las medusas sin miedo.",
         imagen: ""
     },
@@ -355,13 +291,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.02–0.03 kg",
-            2: "0.03–0.04 kg",
-            3: "0.04–0.05 kg",
-            4: "0.05–0.06 kg",
-            5: "0.06–0.07 kg"
-        },
+        
         anecdota: "Energética y adorable, se volvió una superestrella del mundo marino gracias a cierta famosa película oceánica.",
         imagen: ""
     },
@@ -384,13 +314,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
+        
         anecdota: "Un tipo de pez plano, no muy agraciado, pero amable.",
         imagen: ""
     },
@@ -413,13 +337,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.30 kg"
-        },
+        
         anecdota: "Como pez nocturno, su vista apenas le alcanza para buscar comida.",
         imagen: ""
     },
@@ -442,13 +360,7 @@ recetas: [],
         },
         clima: ["soleado", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "0.02–0.03 kg",
-            2: "0.03–0.04 kg",
-            3: "0.04–0.05 kg",
-            4: "0.05–0.06 kg",
-            5: "0.06–0.07 kg"
-        },
+        
         anecdota: "Un poco torpe, pero hermoso y único. Eso sí, le encanta dormir.",
         imagen: ""
     },
@@ -474,13 +386,7 @@ recetas: [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Gigante con garras de hierro. ¡Qué aspecto tan feroz!",
         imagen: ""
     },
@@ -503,13 +409,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Un pez que viaja entre ríos y mares, aunque su hogar habitual es el océano.",
         imagen: ""
     },
@@ -532,13 +432,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "80–94 kg",
-            2: "94–108 kg",
-            3: "108–122 kg",
-            4: "122–136 kg",
-            5: "136–150 kg"
-        },
+        
         anecdota: "Sus ojos brillan bajo la luz de la luna, como los de un gatito.",
         imagen: ""
     },
@@ -561,13 +455,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "100–120 kg",
-            2: "120–140 kg",
-            3: "140–160 kg",
-            4: "160–180 kg",
-            5: "180–200 kg"
-        },
+        
         anecdota: "Algunos lo llaman mensajero del palacio dragón; otros, demonio del fondo. Aún se sabe muy poco sobre él.",
         imagen: ""
     },
@@ -590,13 +478,7 @@ recetas: [],
         },
         clima: ["lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Tranquilo, incluso en la oscuridad más profunda.",
         imagen: ""
     },
@@ -618,13 +500,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Vive en aguas dulces. Tan común como sabrosa, seguro la has probado.",
         imagen: ""
     },
@@ -647,13 +523,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 5,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Amante de los lagos tranquilos. Debe de tener un carácter apacible.",
         imagen: ""
     },
@@ -676,13 +546,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.3 kg"
-        },
+        
         anecdota: "Pececillo blanco azulado, fácil de encontrar en el mar.",
         imagen: ""
     },
@@ -705,13 +569,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Es un barbo, no un bobo... ¡ni un pez gordo!",
         imagen: ""
     },
@@ -734,13 +592,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "1–1.2 kg",
-            2: "1.2–1.4 kg",
-            3: "1.4–1.6 kg",
-            4: "1.6–1.8 kg",
-            5: "1.8–2 kg"
-        },
+        
         anecdota: "Una perca especial con grandes manchas de color verde oscuro en el cuerpo.",
         imagen: ""
     },
@@ -763,13 +615,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.05–0.07 kg",
-            2: "0.07–0.09 kg",
-            3: "0.09–0.11 kg",
-            4: "0.11–0.13 kg",
-            5: "0.13–0.15 kg"
-        },
+        
         anecdota: "Tiene un cuerpo delgado y escamas finas.",
         imagen: ""
     },
@@ -794,13 +640,7 @@ recetas: [
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.3 kg"
-        },
+        
         anecdota: "Se encuentra en muchos ríos. Se esconde entre algas para evitar el sol.",
         imagen: ""
     },
@@ -823,13 +663,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "0.05–0.07 kg",
-            2: "0.07–0.09 kg",
-            3: "0.09–0.11 kg",
-            4: "0.11–0.13 kg",
-            5: "0.13–0.15 kg"
-        },
+        
         anecdota: "Lleva dos florecitas danzantes en la cabeza.",
         imagen: ""
     },
@@ -852,13 +686,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Heredera de la rana de estanque y la de pantano, se distribuye ampliamente en todo tipo de lagos.",
         imagen: ""
     },
@@ -881,13 +709,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.05–0.07 kg",
-            2: "0.07–0.09 kg",
-            3: "0.09–0.11 kg",
-            4: "0.11–0.13 kg",
-            5: "0.13–0.15 kg"
-        },
+        
         anecdota: "De cuerpo resbaloso. Se dice que las tencas enfermas se frotan entre sí para curarse, por eso las llaman «pez doctor».",
         imagen: ""
     },
@@ -907,13 +729,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Mariposa del mar... con una colita y aguijones ocultos.",
         imagen: ""
     },
@@ -934,13 +750,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.3 kg"
-        },
+        
         anecdota: "Aunque pequeño, es un gran cazador de pececitos y plancton.",
         imagen: ""
     },
@@ -961,13 +771,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "5–8 kg",
-            2: "8–11 kg",
-            3: "11–14 kg",
-            4: "14–17 kg",
-            5: "17–20 kg"
-        },
+        
         anecdota: "Tiene bigotes largos como una cabra: una apariencia muy sabia.",
         imagen: ""
     },
@@ -988,13 +792,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "También llamado «falso jurel», porque se parece al jurel japonés pero no están emparentados.",
         imagen: ""
     },
@@ -1017,13 +815,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.3 kg"
-        },
+        
         anecdota: "Extraño, hermoso, y de movimientos lentos.",
         imagen: ""
     },
@@ -1044,13 +836,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Lleva un farol que atrae la cena.",
         imagen: ""
     },
@@ -1071,13 +857,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.15–0.18 kg",
-            2: "0.18–0.21 kg",
-            3: "0.21–0.24 kg",
-            4: "0.24–0.27 kg",
-            5: "0.27–0.3 kg"
-        },
+        
         anecdota: "Un pulpo mediano, persigue la luz en la oscuridad.",
         imagen: ""
     },
@@ -1102,13 +882,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "Uno de los miembros más comunes de la familia del salmón. Su carne anaranjada es rica en vitaminas, deliciosa cruda o cocida.",
         imagen: ""
     },
@@ -1129,13 +903,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "2–2.6 kg",
-            2: "2.6–3.2 kg",
-            3: "3.2–3.8 kg",
-            4: "3.8–4.4 kg",
-            5: "4.4–5 kg"
-        },
+        
         anecdota: "Mini... pero con dignidad.",
         imagen: ""
     },
@@ -1156,13 +924,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "1–1.4 kg",
-            2: "1.4–1.8 kg",
-            3: "1.8–2.2 kg",
-            4: "2.2–2.6 kg",
-            5: "2.6–3 kg"
-        },
+        
         anecdota: "¿Quién dijo que alquilar una casa cuesta dinero? El cangrejo ermitaño, experto en mudanzas, opina lo contrario.",
         imagen: ""
     },
@@ -1184,13 +946,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "1-1.4kg",
-            2: "1.4-1.8kg",
-            3: "1.8-2.2kg",
-            4: "2.2-2.6kg",
-            5: "2.6-3kg"
-        },
+        
         anecdota: "De cuerpo delgado. Una vez que encuentra su hogar ideal, no se muda a la ligera.",
         imagen: ""
     },
@@ -1213,13 +969,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "2-2.6kg",
-            2: "2.6-3.2kg",
-            3: "3.2-3.8kg",
-            4: "3.8-4.4kg",
-            5: "4.4-5kg"
-        },
+        
         anecdota: "Cuenta la historia que los carpines nacen dorados, y se oscurecen con el tiempo.",
         imagen: ""
     },
@@ -1242,13 +992,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 4,
-        pesos: {
-            1: "0.02-0.03kg",
-            2: "0.03-0.04kg",
-            3: "0.04-0.05kg",
-            4: "0.05-0.06kg",
-            5: "0.06-0.07kg"
-        },
+        
         anecdota: "¿Molesto? ¿O solo haciendo puchero?",
         imagen: ""
     },
@@ -1271,13 +1015,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "0.02-0.03kg",
-            2: "0.03-0.04kg",
-            3: "0.04-0.05kg",
-            4: "0.05-0.06kg",
-            5: "0.06-0.07kg"
-        },
+        
         anecdota: "Es bello y tranquilo. No busca su comida, espera a que llegue sola.",
         imagen: ""
     },
@@ -1299,13 +1037,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.05-0.07kg",
-            2: "0.07-0.09kg",
-            3: "0.09-0.11kg",
-            4: "0.11-0.13kg",
-            5: "0.13-0.15kg"
-        },
+        
         anecdota: "De cuerpo liso y ágil, se mueve entre las grietas rocosas con total libertad. Ante el susto, se pega a la pared antes de reaccionar.",
         imagen: ""
     },
@@ -1328,13 +1060,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "0.05-0.07kg",
-            2: "0.07-0.09kg",
-            3: "0.09-0.11kg",
-            4: "0.11-0.13kg",
-            5: "0.13-0.15kg"
-        },
+        
         anecdota: "Un pececillo color barro, escondido entre el barro... ¡Qué trabalenguas!",
         imagen: ""
     },
@@ -1357,13 +1083,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 3,
-        pesos: {
-            1: "0.05-0.07kg",
-            2: "0.07-0.09kg",
-            3: "0.09-0.11kg",
-            4: "0.11-0.13kg",
-            5: "0.13-0.15kg"
-        },
+        
         anecdota: "También llamado «pez capelín», huele ligeramente a pepino fresco.",
         imagen: ""
     },
@@ -1386,13 +1106,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 2,
-        pesos: {
-            1: "0.02-0.03kg",
-            2: "0.03-0.04kg",
-            3: "0.04-0.05kg",
-            4: "0.05-0.06kg",
-            5: "0.06-0.07kg"
-        },
+        
         anecdota: "Pez carnívoro que vive en lagos cálidos.",
         imagen: ""
     },
@@ -1417,13 +1131,7 @@ recetas: [],
         },
         clima: ["soleado", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "1-1.4kg",
-            2: "1.4-1.8kg",
-            3: "1.8-2.2kg",
-            4: "2.2-2.6kg",
-            5: "2.6-3kg"
-        },
+        
         anecdota: "Prefiere permanecer inmóvil en el fondo marino poco profundo. Pero cuando tiene hambre, se mueve por todas partes en busca de comida.",
         imagen: ""
     },
@@ -1446,13 +1154,7 @@ recetas: [],
         },
         clima: ["soleado", "lluvia", "arcoiris"],
         estrellas: 1,
-        pesos: {
-            1: "1-1.4kg",
-            2: "1.4-1.8kg",
-            3: "1.8-2.2kg",
-            4: "2.2-2.6kg",
-            5: "2.6-3kg"
-        },
+        
         anecdota: "Sus escamas reflejan un violeta de ensueño. ¡Qué lindo!",
         imagen: ""
     },
@@ -1476,14 +1178,6 @@ recetas: [],
 
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
-
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
 
         valorVenta: {
             1: 50,
@@ -1526,14 +1220,6 @@ recetas: [],
         clima: ["arcoiris", "soleado"],
         estrellas: 0,
 
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
-
         valorVenta: {
             1: 230,
             2: 345,
@@ -1574,14 +1260,6 @@ recetas: [],
 
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
-
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
 
         valorVenta: {
             1: 320,
@@ -1624,14 +1302,6 @@ recetas: [],
         clima: ["arcoiris", "soleado"],
         estrellas: 0,
 
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
-
         valorVenta: {
             1: 230,
             2: 345,
@@ -1672,14 +1342,6 @@ recetas: [],
 
         clima: ["arcoiris", "lluvia"],
         estrellas: 0,
-
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
 
         valorVenta: {
             1: 320,
@@ -1722,14 +1384,6 @@ recetas: [],
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
 
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
-
         valorVenta: {
             1: 230,
             2: 345,
@@ -1770,14 +1424,6 @@ recetas: [],
 
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
-
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
 
         valorVenta: {
             1: 150,
@@ -1820,14 +1466,6 @@ recetas: [],
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
 
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
-
         valorVenta: {
             1: 230,
             2: 345,
@@ -1868,14 +1506,6 @@ recetas: [],
 
         clima: ["arcoiris", "lluvia"],
         estrellas: 0,
-
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
 
         valorVenta: {
             1: 100,
@@ -1918,14 +1548,6 @@ recetas: [],
         clima: ["arcoiris", "soleado", "lluvia"],
         estrellas: 0,
 
-        pesos: {
-            1: "Pendiente",
-            2: "Pendiente",
-            3: "Pendiente",
-            4: "Pendiente",
-            5: "Pendiente"
-        },
-
         valorVenta: {
             1: 150,
             2: 225,
@@ -1944,6 +1566,411 @@ recetas: [],
 
         anecdota: "Ojos rojos... ¿alguien lo hizo llorar?",
         imagen: ""
-    }
+    }, 
+   {
+    id: "trucha",
+    nombre: "Trucha",
+    categoria: "pesca",
+
+    nivelPesca: 5,
+    sombra: "Mediano",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Río del crepúsculo",
+    actividad: "Diaria",
+    horario: {
+        inicio: 1,
+        fin: 1,
+        todoElDia: true
+    },
+
+    clima: ["soleado", "lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 230,
+        2: 345,
+        3: 460,
+        4: 920,
+        5: 1840
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Un pez de agua dulce muy común. Su carne es tierna y sabrosa.",
+    imagen: ""
+},
+
+{
+    id: "almeja-perla-gigante",
+    nombre: "Almeja de perla gigante",
+    categoria: "pesca",
+
+    nivelPesca: 6,
+    sombra: "Grande",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Mar antiguo",
+    actividad: "Diaria",
+    horario: {
+        inicio: 1,
+        fin: 1,
+        todoElDia: true
+    },
+
+    clima: ["soleado", "lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 535,
+        2: 802,
+        3: 1070,
+        4: 2140,
+        5: 4280
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Una almeja enorme que puede producir perlas de gran tamaño.",
+    imagen: ""
+},
+
+{
+    id: "pez-rubio",
+    nombre: "Pez Rubio",
+    categoria: "pesca",
+
+    nivelPesca: 6,
+    sombra: "Mediano",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Mar oriental",
+    actividad: "Diaria",
+    horario: {
+        inicio: 1,
+        fin: 1,
+        todoElDia: true
+    },
+
+    clima: ["soleado", "lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 230,
+        2: 345,
+        3: 460,
+        4: 920,
+        5: 1840
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Tiene unas aletas pectorales que parecen alas abiertas.",
+    imagen: ""
+},
+
+{
+    id: "salmon-keta",
+    nombre: "Salmón Keta",
+    categoria: "pesca",
+
+    nivelPesca: 6,
+    sombra: "Mediano",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Río",
+    actividad: "Diaria",
+    horario: {
+        inicio: 1,
+        fin: 1,
+        todoElDia: true
+    },
+
+    clima: ["soleado", "lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 230,
+        2: 345,
+        3: 460,
+        4: 920,
+        5: 1840
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Nada río arriba para regresar al lugar donde nació.",
+    imagen: ""
+},
+
+{
+    id: "anguila-europea",
+    nombre: "Anguila Europea",
+    categoria: "pesca",
+
+    nivelPesca: 7,
+    sombra: "Mediano",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Río sereno",
+    actividad: "Diaria",
+    horario: {
+        inicio: 19,
+        fin: 7,
+        todoElDia: false
+    },
+
+    clima: ["lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 230,
+        2: 345,
+        3: 460,
+        4: 920,
+        5: 1840
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Su cuerpo alargado y resbaladizo le permite desplazarse con facilidad entre las rocas.",
+    imagen: ""
+},
+
+{
+    id: "killi-rayado",
+    nombre: "Killi rayado",
+    categoria: "pesca",
+
+    nivelPesca: 7,
+    sombra: "Pequeño",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Lago suburbano",
+    actividad: "Diaria",
+    horario: {
+        todoElDia: false,
+        tramos: [
+            { inicio: 1, fin: 7 },
+            { inicio: 13, fin: 1 }
+        ]
+    },
+
+    clima: ["soleado", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 150,
+        2: 225,
+        3: 300,
+        4: 600,
+        5: 1200
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Con rayas blanquinegras, sueña de una vida tranquila.",
+    imagen: ""
+},
+
+{
+    id: "pez-espinoso-tres-espinas",
+    nombre: "Pez espinoso de tres espinas",
+    categoria: "pesca",
+
+    nivelPesca: 7,
+    sombra: "Pequeño",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Río de aguas bajas",
+    actividad: "Diaria",
+    horario: {
+        inicio: 1,
+        fin: 1,
+        todoElDia: true
+    },
+
+    clima: ["lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 150,
+        2: 225,
+        3: 300,
+        4: 600,
+        5: 1200
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Cuando pelea, las tres espinas de su cuerpo se erigen para intimidar a sus oponentes.",
+    imagen: ""
+},
+
+{
+    id: "pez-sculpin",
+    nombre: "Pez Sculpin",
+    categoria: "pesca",
+
+    nivelPesca: 7,
+    sombra: "Pequeño",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Lago del Monte termal",
+    actividad: "Diaria",
+    horario: {
+        inicio: 7,
+        fin: 1,
+        todoElDia: false
+    },
+
+    clima: ["lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 150,
+        2: 225,
+        3: 300,
+        4: 600,
+        5: 1200
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 100,
+        experto: 300,
+        maestro: 600
+    },
+
+    anecdota: "Por lo general, se queda en el fondo del agua, demasiado perezoso para nadar.",
+    imagen: ""
+},
+
+{
+    id: "cangrejo-real",
+    nombre: "Cangrejo Real",
+    categoria: "pesca",
+
+    nivelPesca: 8,
+    sombra: "Grande",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Mar de ballena",
+    actividad: "Diaria",
+    horario: {
+        inicio: 7,
+        fin: 1,
+        todoElDia: false
+    },
+
+    clima: ["arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 535,
+        2: 802,
+        3: 1070,
+        4: 2140,
+        5: 4280
+    },
+
+    recetas: [
+        "Paella de mariscos",
+        "Cangrejo rey al vapor",
+        "Pinzas fritas con camarón y queso"
+    ],
+
+    maestria: {
+        novato: 60,
+        experto: 180,
+        maestro: 360
+    },
+
+    anecdota: "Su tierna carne es rica en diversas proteínas y grasas saludables. Se recomienda cocinarla al vapor.",
+    imagen: ""
+},
+
+{
+    id: "pez-dorado",
+    nombre: "Pez Dorado",
+    categoria: "pesca",
+
+    nivelPesca: 8,
+    sombra: "Pequeño",
+    categoriaHeartodex: "Común",
+
+    ubicacion: "Lago de la pradera",
+    actividad: "Diaria",
+    horario: {
+        inicio: 7,
+        fin: 1,
+        todoElDia: false
+    },
+
+    clima: ["lluvia", "arcoiris"],
+    estrellas: 0,
+
+    valorVenta: {
+        1: 250,
+        2: 375,
+        3: 500,
+        4: 1000,
+        5: 2000
+    },
+
+    recetas: [],
+
+    maestria: {
+        novato: 60,
+        experto: 180,
+        maestro: 360
+    },
+
+    anecdota: "Con sus colores deslumbrantes y su elegante postura, es la reina de belleza del mundo de los peces.",
+    imagen: ""
+} 
 
 ];
